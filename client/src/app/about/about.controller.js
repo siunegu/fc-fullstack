@@ -1,8 +1,8 @@
 class AboutController {
-  console.log('initalising AboutController');
-  constructor ($timeout, webDevTec, toastr) {
-    'ngInject';
 
+  constructor ($timeout) {
+    'ngInject';
+    console.log('initalising AboutController')
     this.test = 'okay this works';
     // this.classAnimation = '';
     // this.creationDate = 1438406593708;

@@ -8,8 +8,8 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav">
-        <li class="active"><a ng-href="#">Home</a></li>
-        <li><a ng-href="#">About</a></li>
+        <li class="active"><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="home.about" ui-sref-active="active">About</a></li>
         <li><a ng-href="#">Contact</a></li>
       </ul>
 
@@ -19,3 +19,4 @@
     </div>
   </div>
 </nav>
+<div ui-view></div>

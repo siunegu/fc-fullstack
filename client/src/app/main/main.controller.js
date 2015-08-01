@@ -1,4 +1,5 @@
 class MainController {
+  console.log('initialising MainController')
   constructor ($timeout, webDevTec, toastr) {
     'ngInject';
 

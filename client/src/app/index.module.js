@@ -14,10 +14,11 @@ import TechspecController from './techspec/techspec.controller';
 import NavbarDirective from '../app/components/navbar/navbar.directive';
 
 
-angular.module('client', ['ngTouch', 'ui.router'])
-  .constant('malarkey', malarkey)
-  .constant('toastr', toastr)
+angular.module('client', ['ngTouch', 'ui.router', 'angular-carousel'])
   .constant('moment', moment)
+  .constant('angular-carousel', angular-carousel)
+
+
   .config(config)
 
   .config(routerConfig)

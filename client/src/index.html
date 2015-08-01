@@ -27,22 +27,23 @@
     <nav class="navbar navbar-static-top navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="https://github.com/Swiip/generator-gulp-angular">
+          <!-- <a class="navbar-brand" href="https://github.com/Swiip/generator-gulp-angular">
             <span class="glyphicon glyphicon-home"></span> Gulp Angular
-          </a>
+          </a> -->
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
           <ul class="nav navbar-nav">
-            <li class="active"><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="home" ui-sref-active="active" class="active">Home</a></li>
             <li><a ui-sref="about" ui-sref-active="active">About</a></li>
-            <li><a ui-sref="contact">Contact</a></li>
-            <li><a ui-sref="preorder">Preorder</a></li>
+            <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
+            <li><a ui-sref="preorder" ui-sref-active="active">Preorder</a></li>
+            <li><a ui-sref="techspecs" ui-sref-active="active">Tech Specs</a></li>
           </ul>
 
-          <ul class="nav navbar-nav navbar-right acme-navbar-text">
+          <!-- <ul class="nav navbar-nav navbar-right acme-navbar-text">
             <li>Application was created {{ vm.relativeDate }}.</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>

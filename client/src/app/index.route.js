@@ -27,14 +27,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       templateUrl: 'app/preorder/preorder.html',
       controller: 'PreorderController',
       controllerAs: 'preorder'
-    });
+    })
 
-    // .state('home.about', {
-    //   url: '/about',
-    //   templateUrl: 'app/about/about.html',
-    //   controller: 'AboutController',
-    //   controllerAs: 'about'
-    // });
+    .state('techspecs', {
+      url: '/techspecs',
+      templateUrl: 'app/techspec/techspecs.html',
+      controller: 'TechspecController',
+      controllerAs: 'techspec'
+    });
 
   $urlRouterProvider.otherwise('/');
 }

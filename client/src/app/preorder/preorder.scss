@@ -1,0 +1,11 @@
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 40px;    
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 5px 10px;
+    pointer-events: none;
+}

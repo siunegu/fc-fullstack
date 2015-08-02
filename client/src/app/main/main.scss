@@ -1,10 +1,15 @@
 /** Carousel **/
+.mask-carousel {
+	height: 97.5%;
+}
+
 .carousel {
 	position: relative;
 	bottom: 22px;
 
 	width: 100vw;
 	overflow: hidden;
+	z-index: -1;
 }
 
 
@@ -41,3 +46,49 @@
 	right: 0;
 	top: 50%;
 }	
+
+/* 
+ * ==========================
+ * Masks
+ * ==========================
+ */
+
+.color-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;		
+}
+
+.pattern-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background: url("../assets/images/mask.png");
+}
+
+/* 
+ * ==========================
+ * Grab 'n' Go
+ * ==========================
+ */
+
+ .grab-n-go {
+	position: relative;
+	text-align: center;
+	margin-top: -50px;
+	height: 80vh;
+
+ 	background-color: $gray-base;
+ 	background-image: url('../assets/images/grab-n-go.jpg');
+	background-size: cover;
+	overflow: hidden; 	
+	.color-mask {
+		// background-color: rgba($gray-dark, 0.5);	
+	}
+ }

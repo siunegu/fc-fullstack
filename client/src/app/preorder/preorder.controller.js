@@ -1,13 +1,10 @@
 class PreorderController {
-  constructor (ngDialog) {
+  constructor ($http, ngDialog) {
     'ngInject';
     console.log("initializing PreorderController");
 
-    console.log(ngDialog);
-
     this.ngDialog = ngDialog;
-
-
+    this.$http = $http;
 
     this.countryList = [
       {name: 'Afghanistan', code: 'AF'},
@@ -256,17 +253,34 @@ class PreorderController {
     ];
   }
 
+  // var data = 
+
   sendEmail(form) {
+
+    var data = {
+      contactName: form.name,
+      contactEmail: form.email
+      // TODO: Add country as data to send
+    };
+
+    this.$http.post('localhost:9030/email', data)
+    .then(function(result){
+      console.log('success is...', result);
+      return result;
+    })
+    .catch(function(error){
+      console.log('error is...', error);
+      return error;
+    })
+
     console.log(form);
+    this.ngDialog.open({
+      template: '/app/preorder/popupTmpl.html'
+    });
   }
 
-  clickToOpen(){
-      this.ngDialog.open({
-        template:'/app/preorder/popupTmpl.html'
-  });
 
 
   }
-}
 
 export default PreorderController;

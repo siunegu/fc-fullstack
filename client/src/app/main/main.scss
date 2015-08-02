@@ -1,0 +1,35 @@
+/** Carousel **/
+
+// Carousel Buttons
+.slick-button {
+	position: absolute;
+
+	width: 60px;
+	height: 60px;
+	margin: 0 15px;
+
+	color: #fff;
+	border: 1px solid $gray-light;
+	border-radius: 50%;
+
+	background-color: rgba(255,255,255,0);
+
+	z-index: 99;
+
+	transition: .3s all ease-in-out;
+
+	&:hover {
+		color: $red-accent;
+	}
+}
+
+.slick-left {
+	@extends .slick-button;
+	left: 0;
+	top: 50%;
+}
+.slick-right {
+	@extends .slick-button;
+	right: 0;
+	top: 50%;
+}	

@@ -22,7 +22,7 @@ class NavbarController {
     'ngInject';
 
     // "this.creation" is avaible by directive option "bindToController: true"
-    this.relativeDate = moment(this.creationDate).fromNow();
+    // this.relativeDate = moment(this.creationDate).fromNow();
   }
 }
 

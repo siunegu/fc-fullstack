@@ -12,12 +12,10 @@ import ContactController from './contact/contact.controller';
 import TechspecController from './techspec/techspec.controller';
 
 import NavbarDirective from '../app/components/navbar/navbar.directive';
+// import SlickDirective from '../app/components/slick/'
 
-
-angular.module('client', ['ngTouch', 'ui.router', 'angular-carousel'])
+angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel'])
   .constant('moment', moment)
-  .constant('angular-carousel', angular-carousel)
-
 
   .config(config)
 

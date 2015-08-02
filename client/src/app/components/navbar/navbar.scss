@@ -1,3 +1,28 @@
-.acme-navbar-text{
-  color: white;
+/** Navigation **/
+
+
+.nav.navbar-nav {
+	font-family: 'Orbitron';
+	font-size: 13px;	
+
+	position: relative;
+	top: 5px;
+	
+	li a {
+		color: $gray-light;
+	}
+
+	.active > a {
+		background-color: $gray-dark;
+		&:hover {
+			background-color: $gray-dark;
+		}
+	}
 }
+
+.logo-glyph {
+	max-height: 60px;
+	min-height: 40px;
+
+	padding: 15px 15px;
+}	

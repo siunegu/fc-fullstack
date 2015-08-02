@@ -14,7 +14,7 @@ import TechspecController from './techspec/techspec.controller';
 import NavbarDirective from '../app/components/navbar/navbar.directive';
 // import SlickDirective from '../app/components/slick/'
 
-angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel'])
+angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog'])
   .constant('moment', moment)
 
   .config(config)

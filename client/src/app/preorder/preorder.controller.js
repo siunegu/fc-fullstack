@@ -1,7 +1,13 @@
 class PreorderController {
-  constructor () {
+  constructor (ngDialog) {
     'ngInject';
     console.log("initializing PreorderController");
+
+    console.log(ngDialog);
+
+    this.ngDialog = ngDialog;
+
+
 
     this.countryList = [
       {name: 'Afghanistan', code: 'AF'},
@@ -248,11 +254,18 @@ class PreorderController {
       {name: 'Zambia', code: 'ZM'},
       {name: 'Zimbabwe', code: 'ZW'}
     ];
-
   }
 
   sendEmail(form) {
     console.log(form);
+  }
+
+  clickToOpen(){
+      this.ngDialog.open({
+        template:'/app/preorder/popupTmpl.html'
+  });
+
+
   }
 }
 

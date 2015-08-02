@@ -3,9 +3,9 @@
 <form
   name="userForm"
   class="form-horizontal"
-  ng-submit="preorder.sendEmail(preorder.userForm)"
+  ng-submit="preorder.clickToOpen()"
   >
-
+<!-- ng-submit="preorder.sendEmail(preorder.userForm)" -->
 
   <!-- Name / text  -->
   <div class="form-group">
@@ -22,14 +22,15 @@
             ng-model="preorder.userForm.name"
             ng-maxlength="60"
             ng-minlength="2"
-            required />
+             />
         </div>
     </div>
   </div>
 
-  <!-- Email / text  -->
   <div class="form-group">
-    <div class="col-xs-6">
+    <div 
+      class="col-xs-6"
+      ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
         <div class="left-inner-addon">
           <i class="material-icons">email</i>
         <input
@@ -39,7 +40,7 @@
           class="form-control"
           ng-model="preorder.userForm.email"
           ng-maxlength="254"      
-          required />
+           />
         </div>
     </div>
   </div>
@@ -47,21 +48,23 @@
 
 
   <div class="form-group">
-    <div class="col-xs-6">
+    <div 
+      class="col-xs-6"
+      ng-class="{ 'has-error' : userForm.country.$invalid && !userForm.country.$pristine }">
       <select
         ng-model="preorder.userForm.country"
         class="form-control"
         ng-options="country.name for country in preorder.countryList track by country.code"
-        required>
+        >
       <option value="">Select a Country</option>
       </select>
     </div>
   </div>
 
   <div class="form-group">
-    <div class="col-xs-6">
+    <div class="col-xs-6 text-center">
       <input
-        class="btn btn-primary"
+        class="btn btn-default"
         type="submit"
         name="Submit"
         value="Submit" />

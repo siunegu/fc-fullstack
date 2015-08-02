@@ -7,7 +7,7 @@
 	position: relative;
 	bottom: 22px;
 
-	width: 100vw;
+	width: 98.8vw;
 	overflow: hidden;
 	z-index: -1;
 }
@@ -86,6 +86,111 @@
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/grab-n-go.jpg');
+	background-size: cover;
+	overflow: hidden; 	
+	.color-mask {
+		// background-color: rgba($gray-dark, 0.5);	
+	}
+ }
+
+/* 
+ * ==========================
+ * Never Ski Alone
+ * ==========================
+ */
+
+ .never-ski-alone {
+	position: relative;
+	text-align: center;
+	margin-top: -50px;
+	height: 80vh;
+
+ 	background-color: $gray-base;
+ 	background-image: url('../assets/images/never-ski-alone.jpg');
+	background-size: cover;
+	overflow: hidden; 	
+	.color-mask {
+		// background-color: rgba($gray-dark, 0.5);	
+	}
+ }
+
+/* 
+ * ==========================
+ * Relive Awesome
+ * ==========================
+ */
+
+ .relive-awesome {
+	position: relative;
+	text-align: center;
+	margin-top: -50px;
+	height: 80vh;
+
+ 	background-color: $gray-base;
+ 	background-image: url('../assets/images/relive-awesome.jpg');
+	background-size: cover;
+	overflow: hidden; 	
+	.color-mask {
+		// background-color: rgba($gray-dark, 0.5);	
+	}
+ }
+
+ /* 
+ * ==========================
+ * Full On Protection!
+ * ==========================
+ */
+
+ .full-on-protection {
+	position: relative;
+	text-align: center;
+	margin-top: -50px;
+	height: 80vh;
+
+ 	background-color: $gray-base;
+ 	background-image: url('../assets/images/full-on-protection.jpg');
+	background-size: cover;
+	overflow: hidden; 	
+	.color-mask {
+		// background-color: rgba($gray-dark, 0.5);	
+	}
+ }
+
+ /* 
+ * ==========================
+ * Comm System
+ * ==========================
+ */
+
+ .comm-system {
+	position: relative;
+	text-align: center;
+	margin-top: -50px;
+	height: 80vh;
+
+ 	background-color: $gray-base;
+ 	background-image: url('../assets/images/comm-system.jpg');
+	background-size: cover;
+	overflow: hidden; 	
+	.color-mask {
+		// background-color: rgba($gray-dark, 0.5);	
+	}
+ }
+
+ /* 
+ * ==========================
+ * Camera System
+ * ==========================
+ */
+
+ .camera-system {
+	position: relative;
+	text-align: center;
+	margin-top: -50px;
+	height: 80vh;
+
+ 	background-color: $gray-base;
+ 	background-image: url('../assets/images/camera-system.jpg');
 	background-size: cover;
 	overflow: hidden; 	
 	.color-mask {

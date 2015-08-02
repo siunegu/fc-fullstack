@@ -11,9 +11,10 @@
 	li a {
 		color: $gray-light;
 	}
-
+	
 	.active > a {
-		background-color: $gray-dark;
+		transition: 0.3s all ease-in-out;
+		background-color: $gray-dark !important;
 		&:hover {
 			background-color: $gray-dark;
 		}

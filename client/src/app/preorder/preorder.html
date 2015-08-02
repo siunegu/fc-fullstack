@@ -6,34 +6,41 @@
   ng-submit="preorder.sendEmail(preorder.userForm)"
   >
 
+
   <!-- Name / text  -->
   <div class="form-group">
     <div
       class="col-xs-6"
       ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-      <input
-        type="text"
-        name="name"
-        ng-model="preorder.userForm.name"
-        ng-maxlength="60"
-        ng-minlength="2"
-        class="form-control"
-        placeholder="Name"
-        required />
+        <div class="left-inner-addon">
+          <i class="material-icons">face</i>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Name"
+            ng-model="preorder.userForm.name"
+            ng-maxlength="60"
+            ng-minlength="2"
+            required />
+        </div>
     </div>
   </div>
 
   <!-- Email / text  -->
   <div class="form-group">
     <div class="col-xs-6">
-      <input
-      type="email"
-      name="email"
-      placeholder="Email"
-      class="form-control"
-      ng-model="preorder.userForm.email"
-      ng-maxlength="254"      
-      required />
+        <div class="left-inner-addon">
+          <i class="material-icons">email</i>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          class="form-control"
+          ng-model="preorder.userForm.email"
+          ng-maxlength="254"      
+          required />
+        </div>
     </div>
   </div>
 
@@ -42,11 +49,12 @@
   <div class="form-group">
     <div class="col-xs-6">
       <select
-      ng-model="preorder.userForm.country"
-      class="form-control"
-      ng-options="country.name for country in preorder.countryList track by country.code"
-      required>
+        ng-model="preorder.userForm.country"
+        class="form-control"
+        ng-options="country.name for country in preorder.countryList track by country.code"
+        required>
       <option value="">Select a Country</option>
+      </select>
     </div>
   </div>
 
@@ -61,5 +69,3 @@
   </div>
 
 </form>
-
-<i class="material-icons">face</i>

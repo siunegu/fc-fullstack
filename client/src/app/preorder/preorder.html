@@ -1,1 +1,65 @@
 <h1>Preorder</h1>
+
+<form
+  name="userForm"
+  class="form-horizontal"
+  ng-submit="preorder.sendEmail(preorder.userForm)"
+  >
+
+  <!-- Name / text  -->
+  <div class="form-group">
+    <div
+      class="col-xs-6"
+      ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+      <input
+        type="text"
+        name="name"
+        ng-model="preorder.userForm.name"
+        ng-maxlength="60"
+        ng-minlength="2"
+        class="form-control"
+        placeholder="Name"
+        required />
+    </div>
+  </div>
+
+  <!-- Email / text  -->
+  <div class="form-group">
+    <div class="col-xs-6">
+      <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      class="form-control"
+      ng-model="preorder.userForm.email"
+      ng-maxlength="254"      
+      required />
+    </div>
+  </div>
+
+
+
+  <div class="form-group">
+    <div class="col-xs-6">
+      <select
+      ng-model="preorder.userForm.country"
+      class="form-control"
+      ng-options="country.name for country in preorder.countryList track by country.code"
+      required>
+      <option value="">Select a Country</option>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-xs-6">
+      <input
+        class="btn btn-primary"
+        type="submit"
+        name="Submit"
+        value="Submit" />
+    </div>
+  </div>
+
+</form>
+
+<i class="material-icons">face</i>

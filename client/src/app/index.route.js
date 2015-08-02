@@ -2,7 +2,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
   'ngInject';
   $stateProvider
     .state('home', {
-      url: '/',
+      url: '/home',
       templateUrl: 'app/main/main.html',
       controller: 'MainController',
       controllerAs: 'main'
@@ -36,7 +36,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controllerAs: 'techspec'
     });
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/home');
 }
 
 export default routerConfig;

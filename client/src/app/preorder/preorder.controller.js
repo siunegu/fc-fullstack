@@ -262,7 +262,7 @@ class PreorderController {
 
   clickToOpen(){
       this.ngDialog.open({
-        template:'popupTmpl.html'
+        template:'/app/preorder/popupTmpl.html'
   });
 
 

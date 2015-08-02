@@ -3,6 +3,7 @@
 <form
   name="userForm"
   class="form-horizontal"
+  ng-submit="preorder.sendEmail(preorder.userForm)"
   >
 
   <!-- Name / text  -->
@@ -26,11 +27,12 @@
   <div class="form-group">
     <div class="col-xs-6">
       <input
-      type="text"
+      type="email"
       name="email"
-      ng-model="preorder.userForm.email"
-      class="form-control"
       placeholder="Email"
+      class="form-control"
+      ng-model="preorder.userForm.email"
+      ng-maxlength="254"      
       required />
     </div>
   </div>
@@ -54,10 +56,10 @@
         class="btn btn-primary"
         type="submit"
         name="Submit"
-        value="Submit"
-        ng-disabled="userForm.$valid === false"
-        ng-click="preorder.sendEmail(preorder.userForm)" />
+        value="Submit" />
     </div>
   </div>
 
 </form>
+
+<i class="material-icons">face</i>

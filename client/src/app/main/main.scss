@@ -1,4 +1,12 @@
 /** Carousel **/
+.carousel {
+	position: relative;
+	bottom: 22px;
+
+	width: 100vw;
+	overflow: hidden;
+}
+
 
 // Carousel Buttons
 .slick-button {

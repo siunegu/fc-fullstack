@@ -263,7 +263,7 @@ class PreorderController {
       // TODO: Add country as data to send
     };
 
-    this.$http.post('localhost:9030/email', data)
+    this.$http.post('http://localhost:9030/email', data)
     .then(function(result){
       console.log('success is...', result);
       return result;

@@ -1,9 +1,12 @@
-function config ($logProvider) {
-  'ngInject';
+function config ($logProvider, $httpProvider) {
+	'ngInject';
   // Enable log
   $logProvider.debugEnabled(true);
 
-  // Set options third-party lib
+  // CORS
+  $httpProvider.defaults.useXDomain = true;
+  delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  
 
 }
 

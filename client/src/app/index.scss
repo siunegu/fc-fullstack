@@ -1,3 +1,9 @@
+// Arimo
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+// Orbitron
+@import url(http://fonts.googleapis.com/css?family=Orbitron:400,500,700);
+
+
  $navbar-inverse-link-color: #5AADBB;
 
  $gray-base: #414042;
@@ -18,6 +24,15 @@
 @import "./preorder/preorder";
 @import "./material-design";
 
+/* 
+ * ==========================
+ * Typography
+ * ==========================
+ */
+
+	h1, h2, h3, h4 {
+		font-family: 'Orbitron';
+	}
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject

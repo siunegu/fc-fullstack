@@ -3,13 +3,13 @@
  * Carousel
  * ==========================
  */
-.mask-carousel {
-	height: 97.5%;
-}
+ .mask-carousel {
+ 	height: 97.5%;
+ }
 
-.carousel {
-	position: relative;
-	bottom: 22px;
+ .carousel {
+ 	position: relative;
+ 	bottom: 22px;
 
 	// width: 98.8vw;
 	overflow: hidden;
@@ -43,34 +43,78 @@
 
 /* 
  * ==========================
+ * Typography
+ * ==========================
+ */
+
+ p {
+ 	font-family: 'Arimo';
+ }
+
+/* 
+ * ==========================
+ * Panel Mixins
+ * ==========================
+ */
+
+ .panel-frontpage {
+ 	h4, h2 {
+ 		position: relative;
+ 		text-transform: uppercase;
+ 		color: #fff;
+ 	}
+ 	h4 {			
+ 		font-weight: bold;
+ 		color: #fff;
+ 	}
+ 	h2 {
+ 		font-weight: 500;
+ 		line-height: 0.8;
+ 		font-size: 3em;
+ 	}
+ }
+
+/* 
+ * ==========================
  * Grab 'n' Go
  * ==========================
  */
 
  .grab-n-go {
+ 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
- 	height: 80vh;
+ 	height: 800px;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/grab-n-go.jpg');
  	background-size: cover;
  	overflow: hidden; 	
- 	
+
  	.color-mask {
-		// background-color: rgba($gray-dark, 0.5);	
-	}
+ 		background: linear-gradient(135deg, rgba(56,149,255,0.08) 0%, rgba(112,151,219,0.08) 0%, rgba(52,118,218,0.08) 35%, rgba(0,90,217,0.43) 65%, rgba(18,40,71,0.68) 86%, rgba(18,40,71,0.84) 100%);
+ 	}
 
-	.col-md-offset-8 {
-		height: 80vh;
-		padding-top: 10%;
+ 	.col-md-offset-8 {
+ 		height: 80vh;
+ 		padding-top: 30%;
 
-		img {
-			
-		}
-	}
-}
+ 		h4 {			
+ 			left: 20px;
+ 			top: 8px;
+ 		}
+ 		h2 {
+ 			right: 10px;
+ 		}
+
+ 		img {
+ 			position: relative;
+ 			left: -28px;
+ 			width: 280px;
+ 		}		
+ 	}
+ }
 
 /* 
  * ==========================
@@ -79,10 +123,11 @@
  */
 
  .never-ski-alone {
+ 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
- 	height: 80vh;
+ 	height: 800px;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/never-ski-alone.jpg');
@@ -90,6 +135,23 @@
  	overflow: hidden; 	
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);	
+	}
+
+	h4 {			
+		left: -65px;
+	}
+	img {
+		right: 20px;
+	}
+
+	.col-md-8 {
+		height: 80vh;
+		padding-top: 30%;
+
+		img {
+			position: relative;
+			width: 120px;
+		}	
 	}
 }
 
@@ -183,12 +245,12 @@
  * ==========================
  */
  .app-demo { 	
-	height: 800px;
+ 	height: 800px;
  	background-color: #000;
 
  	.bgvid {
-		height: 700px;
-		margin: 40px auto;
+ 		height: 700px;
+ 		margin: 40px auto;
  	}	
  }
  

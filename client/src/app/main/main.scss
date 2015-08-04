@@ -137,16 +137,13 @@
 		// background-color: rgba($gray-dark, 0.5);	
 	}
 
-	h4 {			
-		left: -65px;
-	}
-	img {
-		right: 20px;
-	}
-
 	.col-md-8 {
 		height: 80vh;
 		padding-top: 30%;
+
+		img {
+			left: 25px;
+		}
 
 		img {
 			position: relative;
@@ -250,6 +247,7 @@
 
  	.bgvid {
  		height: 700px;
+ 		width: 100%;
  		margin: 40px auto;
  	}	
  }

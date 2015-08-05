@@ -1,5 +1,8 @@
-/** Navigation **/
-
+/* 
+ * ==========================
+ * Navbar Main
+ * ==========================
+ */
 
 .nav.navbar-nav {
 	font-family: 'Orbitron';
@@ -45,3 +48,14 @@
 	margin-left: 15px; 
 	}
 }
+
+/* 
+ * ==========================
+ * Sub Nav
+ * ==========================
+ */
+
+ .subnav {
+ 	z-index: 9999999;
+ 	background-color: rgba(0,0,0, 0.8);
+ }

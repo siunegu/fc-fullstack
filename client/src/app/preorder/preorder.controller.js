@@ -253,8 +253,6 @@ class PreorderController {
     ];
   }
 
-  // var data = 
-
   sendEmail(form) {
 
     var data = {

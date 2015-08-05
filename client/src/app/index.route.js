@@ -34,7 +34,17 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       templateUrl: 'app/techspec/techspecs.html',
       controller: 'TechspecController',
       controllerAs: 'techspec'
-    });
+    })
+
+    .state('features', {
+      url: '/features',
+      templateUrl: 'app/feature/features.html',
+      controller: 'FeatureController',
+      controllerAs: 'feature'
+    })
+
+    ;
+
 
   $urlRouterProvider.otherwise('/home');
 }

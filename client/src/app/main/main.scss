@@ -61,7 +61,6 @@
  	h4, h2 {
  		position: relative;
  		text-transform: uppercase;
- 		letter-spacing: -1.4px;
  		color: #fff;
 
     text-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
@@ -71,6 +70,7 @@
  		color: #fff;
  	}
  	h2 {
+ 		letter-spacing: -1.4px;
  		font-weight: 500;
  		line-height: 0.9;
  		font-size: 2.8em;
@@ -145,12 +145,12 @@
 		padding-top: 30%;
 
 		img {
-			left: 25px;
+			left: 28px;
 		}
 
 		img {
 			position: relative;
-			width: 120px;
+			width: 100px;
 		}	
 	}
 }

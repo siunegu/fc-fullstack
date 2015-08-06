@@ -41,26 +41,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controllerAs: 'preorder'
     })
 
-    // .state('techspecs', {
-    //   url: '/techspecs',
-    //   templateUrl: 'app/techspec/techspecs.html',
-    //   controller: 'TechspecController',
-    //   controllerAs: 'techspec'
-    // })
-
     .state('features', {
       url: '/features',
       templateUrl: 'app/feature/features.html',
       controller: 'FeatureController',
       controllerAs: 'feature'
-    })
-
-    // .state('carousel', {
-    //   url: '/carousel',
-    //   templateUrl: 'app/carousel/carousel.html'
-    // })
-
-    ;
+    });
 
 
   $urlRouterProvider.otherwise('/home');

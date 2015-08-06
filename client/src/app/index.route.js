@@ -10,7 +10,9 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 
     .state('home.features', {
       url: '/features',
-      templateUrl: 'app/carousel/carousel.html'
+      templateUrl: 'app/carousel/carousel.html',
+      controller: 'MainController',
+      controllerAs: 'main'
     })
 
     .state('home.techspecs', {

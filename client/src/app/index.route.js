@@ -8,6 +8,18 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controllerAs: 'main'
     })
 
+    .state('home.features', {
+      url: '/features',
+      templateUrl: 'app/carousel/carousel.html'
+    })
+
+    .state('home.techspecs', {
+      url: '/techspecs',
+      templateUrl: 'app/techspec/techspecs.html',
+        controller: 'TechspecController',
+        controllerAs: 'techspec'
+    })
+
     .state('about', {
       url: '/about',
       templateUrl: 'app/about/about.html',
@@ -29,24 +41,15 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controllerAs: 'preorder'
     })
 
-    .state('techspecs', {
-      url: '/techspecs',
-      templateUrl: 'app/techspec/techspecs.html',
-      controller: 'TechspecController',
-      controllerAs: 'techspec'
-    })
-
     .state('features', {
       url: '/features',
       templateUrl: 'app/feature/features.html',
       controller: 'FeatureController',
       controllerAs: 'feature'
-    })
-
-    ;
+    });
 
 
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/home/features');
 }
 
 export default routerConfig;

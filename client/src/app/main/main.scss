@@ -1,4 +1,21 @@
-/* 
+/*
+ * ==========================
+ * Overrides
+ * ==========================
+ */
+.navbar {margin-bottom:0px;}
+
+
+/*
+ * ==========================
+ * Subnav
+ * ==========================
+ */
+
+.subnav {border-top:2px solid pink;}
+
+
+/*
  * ==========================
  * Carousel
  * ==========================
@@ -16,7 +33,7 @@
 	z-index: -1;
 }
 
-/* 
+/*
  * ==========================
  * Texture Masks
  * ==========================
@@ -27,8 +44,8 @@
  	top: 0;
  	left: 0;
  	z-index: 0;
- 	width: 100%;
- 	height: 100%;		
+ // 	width: 100%;
+ // 	height: 100%;
  }
 
  .pattern-mask {
@@ -41,7 +58,7 @@
  	background: url("../assets/images/mask.png");
  }
 
-/* 
+/*
  * ==========================
  * Typography
  * ==========================
@@ -51,7 +68,7 @@
  	font-family: 'Arimo';
  }
 
-/* 
+/*
  * ==========================
  * Panel Mixins
  * ==========================
@@ -65,7 +82,7 @@
 
     text-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
  	}
- 	h4 {			
+ 	h4 {
  		font-weight: bold;
  		color: #fff;
  	}
@@ -77,7 +94,7 @@
  	}
  }
 
-/* 
+/*
  * ==========================
  * Grab 'n' Go
  * ==========================
@@ -93,7 +110,7 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/grab-n-go.jpg');
  	background-size: cover;
- 	overflow: hidden; 	
+ 	overflow: hidden;
 
  	.color-mask {
  		background: linear-gradient(135deg, rgba(56,149,255,0.08) 0%, rgba(112,151,219,0.08) 0%, rgba(52,118,218,0.08) 35%, rgba(0,90,217,0.43) 65%, rgba(18,40,71,0.68) 86%, rgba(18,40,71,0.84) 100%);
@@ -103,7 +120,7 @@
  		height: 80vh;
  		padding-top: 30%;
 
- 		h4 {			
+ 		h4 {
  			left: 20px;
  			top: 8px;
  		}
@@ -115,11 +132,11 @@
  			position: relative;
  			left: -28px;
  			width: 280px;
- 		}		
+ 		}
  	}
  }
 
-/* 
+/*
  * ==========================
  * Never Ski Alone
  * ==========================
@@ -135,9 +152,9 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/never-ski-alone.jpg');
  	background-size: cover;
- 	overflow: hidden; 	
+ 	overflow: hidden;
  	.color-mask {
-		// background-color: rgba($gray-dark, 0.5);	
+		// background-color: rgba($gray-dark, 0.5);
 	}
 
 	.col-md-8 {
@@ -150,12 +167,12 @@
 
 		img {
 			position: relative;
-			width: 100px;
-		}	
+			width: 120px;
+		}
 	}
 }
 
-/* 
+/*
  * ==========================
  * Relive Awesome
  * ==========================
@@ -170,13 +187,13 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/relive-awesome.jpg');
  	background-size: cover;
- 	overflow: hidden; 	
+ 	overflow: hidden;
  	.color-mask {
-		// background-color: rgba($gray-dark, 0.5);	
+		// background-color: rgba($gray-dark, 0.5);
 	}
 }
 
- /* 
+ /*
  * ==========================
  * Full On Protection!
  * ==========================
@@ -191,13 +208,13 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/full-on-protection.jpg');
  	background-size: cover;
- 	overflow: hidden; 	
+ 	overflow: hidden;
  	.color-mask {
-		// background-color: rgba($gray-dark, 0.5);	
+		// background-color: rgba($gray-dark, 0.5);
 	}
 }
 
- /* 
+ /*
  * ==========================
  * Comm System
  * ==========================
@@ -212,13 +229,13 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/comm-system.jpg');
  	background-size: cover;
- 	overflow: hidden; 	
+ 	overflow: hidden;
  	.color-mask {
-		// background-color: rgba($gray-dark, 0.5);	
+		// background-color: rgba($gray-dark, 0.5);
 	}
 }
 
- /* 
+ /*
  * ==========================
  * Camera System
  * ==========================
@@ -233,18 +250,18 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/camera-system.jpg');
  	background-size: cover;
- 	overflow: hidden; 	
+ 	overflow: hidden;
  	.color-mask {
-		// background-color: rgba($gray-dark, 0.5);	
+		// background-color: rgba($gray-dark, 0.5);
 	}
 }
 
-/* 
+/*
  * ==========================
  * Background Video
  * ==========================
  */
- .app-demo { 	
+ .app-demo {
  	height: 800px;
  	background-color: #000;
 
@@ -252,11 +269,11 @@
  		height: 700px;
  		width: 100%;
  		margin: 40px auto;
- 	}	
+ 	}
  }
- 
 
- /* 
+
+ /*
  * ==========================
  * Eon System
  * ==========================
@@ -271,8 +288,8 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/eon-bg.jpg');
  	background-size: cover;
- 	overflow: hidden; 	
+ 	overflow: hidden;
  	.color-mask {
- 		background-color: rgba($gray-dark, 0.9);	
+ 		background-color: rgba($gray-dark, 0.9);
  	}
  }

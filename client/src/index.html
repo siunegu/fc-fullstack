@@ -29,14 +29,14 @@
   <nav class="navbar navbar-static-top navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a ui-sref="home">
+        <a ui-sref="home.features">
           <img class="logo-glyph" src="../assets/images/logo-glyph.png" >
         </a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
         <ul class="nav navbar-nav">
-          <li class="active"><a ui-sref="home">Home</a></li>
+          <li class="active"><a ui-sref="home.features">Home</a></li>
           <li><a ui-sref="about" ui-sref-active="active">About</a></li>
           <li><a ui-sref="contact">Contact</a></li>
           <li><a ui-sref="preorder">Preorder</a></li>
@@ -51,18 +51,6 @@
       </div>
     </div>
   </nav>
-  <div class="navbar subnav" role="navigation">
-    <div class="navbar-inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2"><p>FORCITE ALPINE</p></div>
-          <div class="col-md-2 col-md-offset-4 text-right"><a ui-sref="features">FEATURES</a></p></div>
-          <div class="col-md-2 text-right"><a ui-sref="techspecs">TECHSPECS</a></div>
-          <div class="col-md-2 text-right"><button class="btn btn-default btn-sm">PRE-ORDER</button></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div ui-view></div>
 

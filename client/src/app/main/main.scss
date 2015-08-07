@@ -185,7 +185,7 @@
 			display: block;
 			position: relative;
 			top: 35px;
-			left: 20px;
+			left: 55px;
 		}
 
 		.panel-icon {				
@@ -233,7 +233,7 @@
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
- 	height: 80vh;
+ 	height: 800px;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/relive-awesome.jpg');
@@ -251,6 +251,9 @@
 	}
 
 	.center-content {
+		padding-top: 8%;
+		padding-bottom: 0;
+
 		color: #fff;
 		width: 75%;
 		margin: 0 auto;	
@@ -304,10 +307,11 @@
  */
 
  .full-on-protection {
+ 	 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
- 	height: 80vh;
+ 	height: 800px;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/full-on-protection.jpg');
@@ -316,6 +320,48 @@
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
 	}
+
+	.col-md-8 {
+		height: 800px;
+		padding-top: 12%;
+
+		h4 {
+			display: block;
+			position: relative;
+			top: 35px;
+			left: 55px;
+		}
+
+		.panel-icon {				
+			position: relative;	
+			left: 28px;
+			width: 120px;
+		}
+
+		.panel-mini-icon {
+			position: relative;	
+			width: 40px;
+		}			
+
+		p {
+			position: relative;
+			color: #fff;
+			font-size: 1.2em;
+			font-weight: 100;
+			margin-top: 25px;			
+			margin-bottom: 25px;			
+		}
+
+		strong {
+			position: relative;			
+			font-size: 1.7em;
+			font-weight: 300;
+			text-transform: uppercase; 
+			color: #fff;
+		}
+
+
+	}	
 }
 
  /*
@@ -325,6 +371,7 @@
  */
 
  .comm-system {
+ 	 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
@@ -346,6 +393,7 @@
  */
 
  .camera-system {
+ 	 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
@@ -366,6 +414,7 @@
  * ==========================
  */
  .app-demo {
+ 	 	@extend .panel-frontpage;
  	height: 800px;
  	background-color: #000;
 
@@ -384,6 +433,7 @@
  */
 
  .eon-system {
+ 	 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;

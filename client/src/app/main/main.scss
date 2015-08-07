@@ -180,7 +180,7 @@
 			display: block;
 			position: relative;
 			top: 35px;
-			left: 50px;
+			left: 20px;
 		}
 
 		.panel-icon {				
@@ -223,6 +223,7 @@
  */
 
  .relive-awesome {
+ 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
@@ -232,12 +233,55 @@
  	background-image: url('../assets/images/relive-awesome.jpg');
  	background-size: cover;
  	overflow: hidden;
+
+ 	.pattern-mask {
+ 		height: 750px;
+ 		z-index: 0;
+ 	}
+ 	
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
 	}
 
 	.center-content {
 		color: #fff;
+		width: 75%;
+		margin: 0 auto;	
+		text-align: center;
+
+		.col-xs-5 {
+			position: relative;
+			right: 20px;
+		}
+
+		h4 {
+			display: block;
+			position: relative;
+			top: 75px;
+			right: 85px;
+		}
+
+		.panel-icon {				
+			position: relative;	
+			left: 5px;
+			width: 120px;
+		}		
+
+		.panel-mini-icon {
+			position: relative;	
+			bottom: 5px;
+			left: 10px;
+			width: 23px;
+		}			
+
+		strong {
+			position: relative;			
+			font-size: 1.7em;
+			font-weight: 300;
+			text-transform: uppercase; 
+			color: #fff;
+		}
+
 	}
 }
 

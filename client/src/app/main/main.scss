@@ -68,7 +68,7 @@
  		text-transform: uppercase;
  		color: #fff;
 
- 		text-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+ 		text-shadow: $text-shadow;
  	}
  	h4 {
  		font-weight: 100;
@@ -105,7 +105,7 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/grab-n-go.jpg');
  	background-size: cover;
- 	background-position: center right;
+ 	background-position: bottom right;
  	overflow: hidden;
 
  	.color-mask {
@@ -364,6 +364,84 @@
 	}	
 }
 
+
+
+ /*
+ * ==========================
+ * Camera System
+ * ==========================
+ */
+
+ .camera-system {
+ 	 	@extend .panel-frontpage;
+ 	position: relative;
+ 	text-align: center;
+ 	margin-top: -50px;
+ 	height: 100vh;
+
+ 	background-color: $gray-base;
+ 	background-image: url('../assets/images/camera-system.jpg');
+ 	background-size: cover;
+ 	background-position: bottom center;
+ 	overflow: hidden;
+ 	.color-mask {
+		// background-color: rgba($gray-dark, 0.5);
+	}
+
+
+	.center-content {
+		padding-top: 8%;
+		padding-bottom: 0;
+
+		color: #fff;
+		width: 75%;
+		margin: 0 auto;	
+		text-align: center;
+
+		.col-xs-5 {
+			position: relative;
+			right: 55px;
+		}
+
+		h4 {
+			display: block;
+			position: relative;
+			top: 75px;
+			right: 95px;
+		}
+		
+		p {
+			position: relative;		
+			right: 12px;
+			margin-bottom: -5px;	
+			text-shadow: $text-shadow;
+		}
+
+		.panel-icon {				
+			position: relative;	
+			right: 15px;
+		}		
+
+		.panel-mini-icon {
+			position: relative;	
+			bottom: 5px;
+			left: 10px;
+			width: 23px;
+		}			
+
+		strong {
+			position: relative;		
+			right: 12px;	
+			font-size: 1.7em;
+			font-weight: 300;
+			text-transform: uppercase; 
+			color: #fff;
+			text-shadow: $text-shadow;
+		}
+
+	}	
+}
+
  /*
  * ==========================
  * Comm System
@@ -384,29 +462,10 @@
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
 	}
+
+
 }
 
- /*
- * ==========================
- * Camera System
- * ==========================
- */
-
- .camera-system {
- 	 	@extend .panel-frontpage;
- 	position: relative;
- 	text-align: center;
- 	margin-top: -50px;
- 	height: 80vh;
-
- 	background-color: $gray-base;
- 	background-image: url('../assets/images/camera-system.jpg');
- 	background-size: cover;
- 	overflow: hidden;
- 	.color-mask {
-		// background-color: rgba($gray-dark, 0.5);
-	}
-}
 
 /*
  * ==========================

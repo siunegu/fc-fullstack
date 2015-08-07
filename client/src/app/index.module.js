@@ -32,3 +32,4 @@ angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog'])
   .controller('TechspecController', TechspecController)
 
   .directive('acmeNavbar', () => new NavbarDirective())
+  // .directive('slick', () => new NavbarDirective())

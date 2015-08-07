@@ -51,6 +51,9 @@
 
  p {
  	font-family: 'Arimo';
+ 	color: #fff;
+ 	font-size: 1.2em;
+ 	font-weight: 100; 	
  }
 
 /*
@@ -102,6 +105,7 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/grab-n-go.jpg');
  	background-size: cover;
+ 	background-position: center right;
  	overflow: hidden;
 
  	.color-mask {
@@ -167,6 +171,7 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/never-ski-alone.jpg');
  	background-size: cover;
+ 	background-position: center left;
  	overflow: hidden;
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
@@ -201,6 +206,7 @@
 			color: #fff;
 			font-size: 1.2em;
 			font-weight: 100;
+			margin-top: 25px;			
 			margin-bottom: 25px;			
 		}
 
@@ -232,13 +238,14 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/relive-awesome.jpg');
  	background-size: cover;
+ 	background-position: center center;
  	overflow: hidden;
 
  	.pattern-mask {
  		height: 750px;
  		z-index: 0;
  	}
- 	
+
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
 	}
@@ -259,6 +266,11 @@
 			position: relative;
 			top: 75px;
 			right: 85px;
+		}
+		
+		p {
+			position: relative;		
+			margin-bottom: 25px;	
 		}
 
 		.panel-icon {				

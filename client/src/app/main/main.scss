@@ -1,5 +1,3 @@
-
-
 /*
  * ==========================
  * Carousel
@@ -555,6 +553,8 @@
  	margin-top: -50px;
  	height: 800px;
 
+  border-bottom:2px solid #fff;
+
  	background-color: $gray-base;
  	background-image: url('../assets/images/eon-bg.jpg');
  	background-size: cover;
@@ -609,4 +609,19 @@
  			color: #fff;
  		}
  	}
+ }
+
+ .icon-container {
+   margin-top:100px;
+
+   .icon-box:hover {
+     cursor: pointer;
+   }
+
+   h5 {
+     margin-bottom:0px;
+   }
+   .zero-margin-top {
+     margin-top:0px;
+   }
  }

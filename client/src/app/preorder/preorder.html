@@ -1,34 +1,58 @@
-<div class="container">
-  <h1>Preorder</h1>
+<div class="preorder-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="../assets/images/forcite-logo.png" alt="..." class="img-rounded">
+        <p>Provide your details below</p>
+        <br>
+        <span>Secure one of the</span>
+        <span>first helmets</span>
+        <h3 class="zero-margin-bottom">FOR</h3>
+        <h3>DISCOUNT OPPORTUNITIES!</h3>
+      </div>
+    </div>
 
-  <form name="userForm" class="form-horizontal" ng-submit="preorder.sendEmail(preorder.userForm)">
-    <div class="form-group">
-      <div class="col-xs-6" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-        <div class="left-inner-addon">
-          <i class="material-icons">face</i>
-          <input type="text" name="name" class="form-control" placeholder="Name" ng-model="preorder.userForm.name" ng-maxlength="60" ng-minlength="2" required />
-        </div>
+
+    <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-3"></div>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+
+        <form name="userForm" class="form-horizontal" ng-submit="preorder.sendEmail(preorder.userForm)">
+          <div class="form-group">
+            <div ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+              <div class="left-inner-addon">
+                <i class="material-icons">face</i>
+                <input type="text" name="name" class="form-control" placeholder="Name" ng-model="preorder.userForm.name" ng-maxlength="60" ng-minlength="2" required />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+              <div class="left-inner-addon">
+                <i class="material-icons">email</i>
+                <input type="email" name="email" placeholder="Email" class="form-control" ng-model="preorder.userForm.email" ng-maxlength="254" required />
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-group">
+            <div class="col-xs-6" ng-class="{ 'has-error' : userForm.country.$invalid && !userForm.country.$pristine }">
+              <select ng-model="preorder.userForm.country" class="form-control" ng-options="country.name for country in preorder.countryList track by country.code" required >
+                <option value="">Select a Country</option>
+              </select>
+            </div>
+          </div> -->
+          <div class="form-group">
+            <div class="text-center">
+              <button class="btn fc-button" type="submit" name="Submit" value="Submit">SUBMIT</button>
+            </div>
+          </div>
+        </form>
       </div>
+      <div class="col-xs-3 col-sm-3 col-md-3"></div>
     </div>
-    <div class="form-group">
-      <div class="col-xs-6" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
-        <div class="left-inner-addon">
-          <i class="material-icons">email</i>
-          <input type="email" name="email" placeholder="Email" class="form-control" ng-model="preorder.userForm.email" ng-maxlength="254" required />
-        </div>
-      </div>
-    </div>
-    <!-- <div class="form-group">
-      <div class="col-xs-6" ng-class="{ 'has-error' : userForm.country.$invalid && !userForm.country.$pristine }">
-        <select ng-model="preorder.userForm.country" class="form-control" ng-options="country.name for country in preorder.countryList track by country.code" required >
-          <option value="">Select a Country</option>
-        </select>
-      </div>
-    </div> -->
-    <div class="form-group">
-      <div class="col-xs-6 text-center">
-        <input class="btn btn-default" type="submit" name="Submit" value="Submit" />
-      </div>
-    </div>
-  </form>
+  </div>
+
+
+
 </div>
+<footer-directive></footer-directive>

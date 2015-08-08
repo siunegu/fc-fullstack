@@ -9,8 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/email', function(req, res) {
   // res.render('index', { title: 'Express' });
-  debugger;
-  console.log("email route!")
+  console.log(req.body);
   if (!(req.body.event == 'email')){
     return res.status(200).json({
       message: 'ignored'

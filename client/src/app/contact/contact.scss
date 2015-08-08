@@ -1,0 +1,48 @@
+.contact-container {
+  padding-top: 30px;
+  font-family: 'Arimo';
+  background: #59595b;
+  height: 400px;
+  color:#fff;
+  .material-icons {
+    color:#fff;
+  }
+  input {
+    color:#fff;
+    background:rgba(0,0,0,0);
+    font-style:italic;
+  }
+  ::-webkit-input-placeholder {
+     color:#fff;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     color:#fff;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color:#fff;
+  }
+  :-ms-input-placeholder {
+     color:#fff;
+  }
+}
+
+.register-container {
+  margin-top:30px;
+  margin-bottom:50px;
+}
+
+.button-container {
+  margin-top:50px;
+}
+
+.mail-info-container {
+  @extend .contact-container;
+  border-bottom: 2px solid #fff;
+  height:300px;
+  img {
+    margin-bottom:20px;
+  }
+  a {
+    color:#fff;
+  }
+}

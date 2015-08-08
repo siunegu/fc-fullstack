@@ -1,6 +1,7 @@
 footer {
   border-top: 2px solid #be3429;
   background: #434244;
+  font-family: 'Arimo';
   .footer-container {
     margin-right: auto;
     margin-left: auto;
@@ -9,6 +10,9 @@ footer {
     color: #fff;
     .logo-container {
       margin-top:20px;
+      img {
+        margin-bottom:20px;
+      }
     }
 
     .list-inline {
@@ -24,13 +28,16 @@ footer {
     .list-unstyled {
       li {
         a {
+          font-size:18px;
           color:#fff;
         }
         margin-bottom:5px;
       }
     }
 
-    h3 {
+    h4 {
+      margin-top:20px;
+      margin-bottom:20px;
       color: #a0a0a0;
     }
   }

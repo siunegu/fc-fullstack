@@ -56,9 +56,21 @@
  */
 
  .subnav {
- 	z-index: 9999999;
- // 	background-color: rgba(0,0,0, 0.8);
- background-color:#59595B;
+	font-family: 'Orbitron';
+ 	z-index: 9999;
+	background-color: #3A3A3E;
+	padding-top: 25px;
+	
+	a {
+		position: relative;
+		top: 2px;
+		color: #fff;
+	}
+
+	button {
+		position: relative;
+		bottom: 5px;
+	}
  }
 
  /*
@@ -66,4 +78,18 @@
   * Overrides
   * ==========================
   */
+
  .navbar {margin-bottom:0px;}
+
+
+ /*
+  * ==========================
+  * Buttons
+  * ==========================
+  */
+
+ .fc-button {
+ 	color: #fff;
+ 	background-color: rgba(0,0,0,0.0);
+ 	border: 1px solid #fff;
+ }

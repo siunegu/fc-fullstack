@@ -3,7 +3,7 @@ class MainController {
   constructor ($timeout) {
     'ngInject';
     console.log('initialising MainController');
-    
+  
     this.slickConfig = {
       autoplay: true,
       draggable: false,  
@@ -16,7 +16,7 @@ class MainController {
         }
       }
     };
-    
+  
 
   }
 

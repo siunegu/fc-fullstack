@@ -17,6 +17,7 @@
   background-size: cover;
   background-size: cover;
   overflow: hidden;
+  border-bottom:2px solid #fff;
 
   .material-icons {
     color:#fff;
@@ -40,6 +41,7 @@
   }
 
   img {
+    margin-top:30px;
     margin-bottom:30px;
   }
 
@@ -55,7 +57,7 @@
     margin-bottom:30px;
   }
 
-  h3 {
+  h3, h4 {
     margin-top:0px;
   }
 

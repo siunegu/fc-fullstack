@@ -1,6 +1,8 @@
 .tech-spec-container {
+  font-family: 'Arimo';
   background: #59595b;
   height: 100%;
+  border-bottom:2px solid #fff;
   .size-row {
     color: #fff;
     margin-bottom: 50px;
@@ -8,7 +10,6 @@
   .colour-row {
     @extend .size-row;
   }
-
   .texture-row {
     @extend .size-row;
   }
@@ -36,12 +37,10 @@
     padding: 10px 25px;
     border-radius: 10px;
   }
-
-
   .spec-container {
-    margin-bottom:200px;
+    margin-bottom: 200px;
     .icon-text-container {
-      color:#fff;
+      color: #fff;
       display: inline-block;
       i {
         vertical-align: bottom;
@@ -52,11 +51,9 @@
         font-weight: 500;
       }
     }
-
     hr {
-      border-top:2px solid #fff;
-      margin-bottom:0px;
+      border-top: 2px solid #fff;
+      margin-bottom: 0;
     }
   }
-
 }

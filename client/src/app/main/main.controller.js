@@ -1,12 +1,14 @@
 class MainController {
 
-  constructor ($timeout) {
+  constructor ($timeout, ngDialog) {
     'ngInject';
     console.log('initialising MainController');
-  
+
+    this.ngDialog = ngDialog;
+
     this.slickConfig = {
       autoplay: true,
-      draggable: false,  
+      draggable: false,
       autoplaySpeed: 3000,
       method: {},
       event: {
@@ -16,8 +18,12 @@ class MainController {
         }
       }
     };
-  
+  }
 
+  openModal(htmlFile){
+    this.ngDialog.open({
+      template: '/app/main/' + htmlFile + '.html'
+    });
   }
 
 }

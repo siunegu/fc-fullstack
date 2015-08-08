@@ -1,11 +1,71 @@
 .left-inner-addon {
-    position: relative;
+  position: relative;
 }
 .left-inner-addon input {
-    padding-left: 40px;    
+  padding-left: 40px;
 }
 .left-inner-addon i {
-    position: absolute;
-    padding: 5px 10px;
-    pointer-events: none;
+  position: absolute;
+  padding: 5px 10px;
+  pointer-events: none;
+}
+.preorder-container {
+  position: relative;
+  height: 880px;
+  background-color: #414042;
+  background: url("../assets/images/pre-order-page-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  border-bottom:2px solid #fff;
+
+  .material-icons {
+    color:#fff;
+  }
+  input {
+    color:#fff;
+    background:rgba(0,0,0,0);
+    font-style:italic;
+  }
+  ::-webkit-input-placeholder {
+     color:#fff;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     color:#fff;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color:#fff;
+  }
+  :-ms-input-placeholder {
+     color:#fff;
+  }
+
+  img {
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+  h3, span, p, h4, h5 {
+    color:#fff;
+  }
+
+  .zero-margin-bottom{
+    margin-bottom:0px;
+  }
+
+  .thirty-margin-bottom {
+    margin-bottom:30px;
+  }
+
+  h3, h4 {
+    margin-top:0px;
+  }
+
+  .container {
+    max-width:750px;
+    margin-top:50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(0,0,0,0.5);
+  }
 }

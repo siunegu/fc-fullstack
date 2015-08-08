@@ -12,6 +12,7 @@ import ContactController from './contact/contact.controller';
 import TechspecController from './techspec/techspec.controller';
 
 import NavbarDirective from '../app/components/navbar/navbar.directive';
+import FooterDirective from '../app/components/directives/footer.directive';
 // import SlickDirective from '../app/components/slick/'
 
 angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog'])
@@ -32,3 +33,5 @@ angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog'])
   .controller('TechspecController', TechspecController)
 
   .directive('acmeNavbar', () => new NavbarDirective())
+
+  .directive('footerDirective', () => new FooterDirective())

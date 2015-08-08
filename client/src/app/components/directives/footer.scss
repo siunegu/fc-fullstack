@@ -1,0 +1,44 @@
+footer {
+  border-top: 2px solid #be3429;
+  background: #434244;
+  font-family: 'Arimo';
+  .footer-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #fff;
+    .logo-container {
+      margin-top:20px;
+      img {
+        margin-bottom:20px;
+      }
+    }
+
+    .list-inline {
+      img {
+        position: relative;
+        height: 25px;
+        width: 25px;
+        border-radius: 2px;
+        margin-left: 15px;
+      }
+    }
+
+    .list-unstyled {
+      li {
+        a {
+          font-size:18px;
+          color:#fff;
+        }
+        margin-bottom:5px;
+      }
+    }
+
+    h4 {
+      margin-top:20px;
+      margin-bottom:20px;
+      color: #a0a0a0;
+    }
+  }
+}

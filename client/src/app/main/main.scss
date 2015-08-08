@@ -11,7 +11,7 @@
 
  .carousel {
  	position: relative;
- 	bottom: 22px;
+ 	// bottom: 22px;
 
 	// width: 98.8vw;
 	overflow: hidden;
@@ -29,8 +29,8 @@
  	top: 0;
  	left: 0;
  	z-index: 0;
- // 	width: 100%;
- // 	height: 100%;
+ 	width: 100%;
+ 	height: 100%;
  }
 
  .pattern-mask {
@@ -51,6 +51,9 @@
 
  p {
  	font-family: 'Arimo';
+ 	color: #fff;
+ 	font-size: 1.2em;
+ 	font-weight: 100;
  }
 
 /*
@@ -65,10 +68,11 @@
  		text-transform: uppercase;
  		color: #fff;
 
-    text-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+ 		text-shadow: $text-shadow;
  	}
  	h4 {
- 		font-weight: bold;
+ 		font-weight: 100;
+ 		font-size: 1.6em;
  		color: #fff;
  	}
  	h2 {
@@ -76,6 +80,12 @@
  		font-weight: 500;
  		line-height: 0.9;
  		font-size: 2.8em;
+ 	}
+
+ 	strong {
+ 		font-family: 'Oswald';
+ 		font-size: 1.6em;
+ 		color: #fff;
  	}
  }
 
@@ -95,27 +105,51 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/grab-n-go.jpg');
  	background-size: cover;
+ 	background-position: bottom right;
  	overflow: hidden;
 
  	.color-mask {
  		background: linear-gradient(135deg, rgba(56,149,255,0.08) 0%, rgba(112,151,219,0.08) 0%, rgba(52,118,218,0.08) 35%, rgba(0,90,217,0.43) 65%, rgba(18,40,71,0.68) 86%, rgba(18,40,71,0.84) 100%);
+ 		z-index: -3;
  	}
 
- 	.col-md-offset-8 {
+ 	.pattern-mask {
+ 		height: 750px;
+ 		z-index: 0;
+ 	}
+
+ 	.col-md-offset-7 {
  		height: 80vh;
- 		padding-top: 30%;
+ 		padding-top: 18%;
+ 		z-index: 999;
 
  		h4 {
  			left: 20px;
  			top: 8px;
  		}
+
  		h2 {
- 			right: 10px;
+ 		}
+
+ 		p {
+ 			position: relative;
+ 			color: #fff;
+ 			font-size: 1.2em;
+ 			font-weight: 100;
+
+ 			padding: 5px;
+ 		}
+
+ 		strong {
+ 			position: relative;
+ 			font-size: 1.7em;
+ 			font-weight: 300;
+ 			text-transform: uppercase;
+ 			color: #fff;
  		}
 
  		img {
  			position: relative;
- 			left: -28px;
  			width: 280px;
  		}
  	}
@@ -137,6 +171,7 @@
  	background-color: $gray-base;
  	background-image: url('../assets/images/never-ski-alone.jpg');
  	background-size: cover;
+ 	background-position: center left;
  	overflow: hidden;
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
@@ -144,16 +179,46 @@
 
 	.col-md-8 {
 		height: 80vh;
-		padding-top: 30%;
+		padding-top: 10%;
 
-		img {
-			left: 28px;
+		h4 {
+			display: block;
+			position: relative;
+			top: 35px;
+			left: 55px;
 		}
 
-		img {
+		.panel-icon {
 			position: relative;
+			left: 28px;
 			width: 120px;
 		}
+
+		.panel-mini-icon {
+			position: relative;
+			bottom: 12px;
+			right: 10px;
+			width: 23px;
+		}
+
+		p {
+			position: relative;
+			color: #fff;
+			font-size: 1.2em;
+			font-weight: 100;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+
+		strong {
+			position: relative;
+			font-size: 1.7em;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+
 	}
 }
 
@@ -164,17 +229,74 @@
  */
 
  .relive-awesome {
+ 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
- 	height: 80vh;
+ 	height: 800px;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/relive-awesome.jpg');
  	background-size: cover;
+ 	background-position: center center;
  	overflow: hidden;
+
+ 	.pattern-mask {
+ 		height: 750px;
+ 		z-index: 0;
+ 	}
+
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
+	}
+
+	.center-content {
+		padding-top: 8%;
+		padding-bottom: 0;
+
+		color: #fff;
+		width: 75%;
+		margin: 0 auto;
+		text-align: center;
+
+		.col-xs-5 {
+			position: relative;
+			right: 20px;
+		}
+
+		h4 {
+			display: block;
+			position: relative;
+			top: 75px;
+			right: 85px;
+		}
+
+		p {
+			position: relative;
+			margin-bottom: 25px;
+		}
+
+		.panel-icon {
+			position: relative;
+			left: 5px;
+			width: 120px;
+		}
+
+		.panel-mini-icon {
+			position: relative;
+			bottom: 5px;
+			left: 10px;
+			width: 23px;
+		}
+
+		strong {
+			position: relative;
+			font-size: 1.7em;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
 	}
 }
 
@@ -185,10 +307,11 @@
  */
 
  .full-on-protection {
+ 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
- 	height: 80vh;
+ 	height: 800px;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/full-on-protection.jpg');
@@ -196,6 +319,126 @@
  	overflow: hidden;
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
+	}
+
+	.col-md-8 {
+		height: 800px;
+		padding-top: 12%;
+
+		h4 {
+			display: block;
+			position: relative;
+			top: 35px;
+			left: 55px;
+		}
+
+		.panel-icon {
+			position: relative;
+			left: 28px;
+			width: 120px;
+		}
+
+		.panel-mini-icon {
+			position: relative;
+			width: 40px;
+		}
+
+		p {
+			position: relative;
+			color: #fff;
+			font-size: 1.2em;
+			font-weight: 100;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+
+		strong {
+			position: relative;
+			font-size: 1.7em;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+
+	}
+}
+
+
+
+ /*
+ * ==========================
+ * Camera System
+ * ==========================
+ */
+
+ .camera-system {
+ 	@extend .panel-frontpage;
+ 	position: relative;
+ 	text-align: center;
+ 	margin-top: -50px;
+ 	height: 100vh;
+
+ 	background-color: $gray-base;
+ 	background-image: url('../assets/images/camera-system.jpg');
+ 	background-size: cover;
+ 	background-position: bottom center;
+ 	overflow: hidden;
+ 	.color-mask {
+		// background-color: rgba($gray-dark, 0.5);
+	}
+
+
+	.center-content {
+		padding-top: 8%;
+		padding-bottom: 0;
+
+		color: #fff;
+		width: 75%;
+		margin: 0 auto;
+		text-align: center;
+
+		.col-xs-5 {
+			position: relative;
+			right: 55px;
+		}
+
+		h4 {
+			display: block;
+			position: relative;
+			top: 75px;
+			right: 95px;
+		}
+
+		p {
+			position: relative;
+			right: 12px;
+			margin-bottom: -5px;
+			text-shadow: $text-shadow;
+		}
+
+		.panel-icon {
+			position: relative;
+			right: 15px;
+		}
+
+		.panel-mini-icon {
+			position: relative;
+			bottom: 5px;
+			left: 10px;
+			width: 23px;
+		}
+
+		strong {
+			position: relative;
+			right: 12px;
+			font-size: 1.7em;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #fff;
+			text-shadow: $text-shadow;
+		}
+
 	}
 }
 
@@ -206,10 +449,12 @@
  */
 
  .comm-system {
+ 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
- 	height: 80vh;
+ 	padding-top: 5%;
+ 	height: 800px;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/comm-system.jpg');
@@ -218,28 +463,66 @@
  	.color-mask {
 		// background-color: rgba($gray-dark, 0.5);
 	}
-}
 
- /*
- * ==========================
- * Camera System
- * ==========================
- */
+	.col-md-5 {
+		height: 800px;
+		padding-top: 5%;
+		text-align: left;
 
- .camera-system {
- 	position: relative;
- 	text-align: center;
- 	margin-top: -50px;
- 	height: 80vh;
+		h2 {
+			&:nth-child(2) {
+				position: relative;
+				bottom: 20px;
+			}
+		}
 
- 	background-color: $gray-base;
- 	background-image: url('../assets/images/camera-system.jpg');
- 	background-size: cover;
- 	overflow: hidden;
- 	.color-mask {
-		// background-color: rgba($gray-dark, 0.5);
+		h4 {
+			display: block;
+			position: relative;
+
+		}
+
+		.panel-icon {
+			position: relative;
+		}
+
+		.panel-mini-icon {
+			position: relative;
+			right: 10px;
+			bottom: 12px;
+
+			margin: 25px 0;
+			display: block;
+		}
+
+		.panel-large-icon {
+			position: relative;
+			bottom: 12px;
+			width: 300px;
+
+			margin: 30px 0;
+			display: block;
+		}
+
+		p {
+			position: relative;
+			color: #fff;
+			font-size: 1.2em;
+			font-weight: 100;
+		}
+
+		strong {
+			position: relative;
+			font-size: 1.7em;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
 	}
+
 }
+
 
 /*
  * ==========================
@@ -247,6 +530,7 @@
  * ==========================
  */
  .app-demo {
+ 	@extend .panel-frontpage;
  	height: 800px;
  	background-color: #000;
 
@@ -265,16 +549,64 @@
  */
 
  .eon-system {
+ 	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
  	margin-top: -50px;
- 	height: 80vh;
+ 	height: 800px;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/eon-bg.jpg');
  	background-size: cover;
  	overflow: hidden;
+
  	.color-mask {
  		background-color: rgba($gray-dark, 0.9);
+ 	}
+
+ 	.center-content {
+ 		padding-top: 10%;
+ 		padding-bottom: 0;
+
+ 		color: #fff;
+ 		width: 75%;
+ 		margin: 0 auto;
+ 		text-align: center;
+
+ 		.col-xs-5 {
+ 			position: relative;
+ 			right: 20px;
+ 		}
+
+ 		h4 {
+ 			display: block;
+ 			position: relative;
+ 		}
+
+ 		p {
+ 			position: relative;
+ 			text-align: justify;
+ 			width: 280px;
+ 		}
+
+ 		.panel-icon {
+ 			position: relative;
+ 			left: 5px;
+ 			width: 300px;
+ 		}
+
+ 		.panel-mini-icon {
+ 			position: relative;
+ 			bottom: 5px;
+
+ 		}
+
+ 		strong {
+ 			position: relative;
+ 			font-size: 1.7em;
+ 			font-weight: 300;
+ 			text-transform: uppercase;
+ 			color: #fff;
+ 		}
  	}
  }

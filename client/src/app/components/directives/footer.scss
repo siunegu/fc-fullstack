@@ -4,9 +4,13 @@ footer {
   .footer-container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     color: #fff;
+    .logo-container {
+      margin-top:20px;
+    }
+
     .list-inline {
       img {
         position: relative;
@@ -16,6 +20,16 @@ footer {
         margin-left: 15px;
       }
     }
+
+    .list-unstyled {
+      li {
+        a {
+          color:#fff;
+        }
+        margin-bottom:5px;
+      }
+    }
+
     h3 {
       color: #a0a0a0;
     }

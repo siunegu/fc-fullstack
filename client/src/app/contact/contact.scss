@@ -48,8 +48,11 @@
 }
 
 #map-canvas {
+  // can replace marker later.
+  border: 15px solid #3A3A3E;
   background-image: url(http://maps.googleapis.com/maps/api/staticmap?center=-33.900897,+151.200909&zoom=14&scale=2&size=1200x1200&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C-33.900897,+151.200909);
-  background-size: fixed;
+  background-size: cover;
   background-position: center center;
-  height: 55vh;
+  height: 75vh;
+
 }

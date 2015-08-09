@@ -1,0 +1,17 @@
+.blog-container {
+  padding-top:30px;
+  height: 880px;
+  background-color: #414042;
+  border-bottom: 2px solid #fff;
+  .title {
+    color: red;
+    border-left: 7px solid red;
+    padding-left: 15px;
+  }
+  .num {
+    color: #fff;
+  }
+  .month {
+    color: #a0a0a0;
+  }
+}

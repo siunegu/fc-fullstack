@@ -10,6 +10,7 @@ import AboutController from './about/about.controller';
 import PreorderController from './preorder/preorder.controller';
 import ContactController from './contact/contact.controller';
 import TechspecController from './techspec/techspec.controller';
+import BlogController from './blog/blog.controller';
 
 import NavbarDirective from '../app/components/navbar/navbar.directive';
 import FooterDirective from '../app/components/directives/footer.directive';
@@ -31,6 +32,7 @@ angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog'])
   .controller('PreorderController', PreorderController)
   .controller('MainController', MainController)
   .controller('TechspecController', TechspecController)
+  .controller('BlogController', BlogController)
 
   .directive('acmeNavbar', () => new NavbarDirective())
 

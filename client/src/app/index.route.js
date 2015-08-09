@@ -48,6 +48,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       templateUrl: 'app/feature/features.html',
       controller: 'FeatureController',
       controllerAs: 'feature'
+    })
+
+    .state('blog', {
+      url: '/blog',
+      templateUrl: 'app/blog/blog.html',
+      controllersAs: 'blog'
     });
 
 

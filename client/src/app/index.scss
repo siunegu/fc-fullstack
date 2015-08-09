@@ -5,13 +5,13 @@
 // Oswald / Hack for Bebas Neue
 @import url(http://fonts.googleapis.com/css?family=Oswald:300,400);
 
- $navbar-inverse-link-color: #5AADBB;
- $gray-base: #414042;
- $gray-dark: #222;
- $gray-light: lighten($gray-base, 46.7%);
- $red-accent: #ee3123;
- $text-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
- $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$navbar-inverse-link-color: #5AADBB;
+$gray-base: #414042;
+$gray-dark: #222;
+$gray-light: lighten($gray-base, 46.7%);
+$red-accent: #ee3123;
+$text-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
 /**
  *  Do not remove this comments bellow. It's the markers used by wiredep to inject
@@ -23,6 +23,7 @@
 @import "./preorder/preorder";
 @import "./material-design";
 @import "./techspec/techspec";
+@import "./about/about";
 
 /*
  * ==========================
@@ -30,9 +31,9 @@
  * ==========================
  */
 
-	h1, h2, h3, h4 {
-		font-family: 'Orbitron';
-	}
+ h1, h2, h3, h4 {
+ 	font-family: 'Orbitron';
+ }
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject

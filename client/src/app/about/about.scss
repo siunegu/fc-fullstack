@@ -1,0 +1,39 @@
+
+/*
+ * ==========================
+ * About Carousel
+ * ==========================
+ */
+
+ .about-carousel {
+ 	position: relative;
+ 	background-size: cover;
+ 	height: 100%;
+ 	padding-bottom: -20px;
+ 	// bottom: 22px;
+
+	// width: 98.8vw;
+	overflow: hidden;
+	z-index: -1;
+}
+
+
+/*
+ * ==========================
+ * Team Info
+ * ==========================
+ */
+
+ .team-info {
+ 	@extend .panel-frontpage;
+ 	position: relative;
+ 	text-align: center;
+
+ 	height: 800px;	
+
+ 	background-image: url('../assets/images/team-image.jpg');
+ 	background-size: cover;
+ 	background-position: center center;
+
+ 	overflow: hidden; 	
+ }

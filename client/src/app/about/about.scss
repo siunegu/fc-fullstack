@@ -29,11 +29,61 @@
  	position: relative;
  	text-align: center;
 
- 	height: 800px;	
+ 	height: 80vh;	
 
  	background-image: url('../assets/images/team-image.jpg');
  	background-size: cover;
  	background-position: center center;
 
  	overflow: hidden; 	
- }
+
+ 	.color-mask {
+ 		background-color: rgba($gray-dark, 0.75);
+ 		z-index: 0;
+ 	}
+
+ 	p {
+ 		margin-top: 22%;
+ 		position: relative;
+
+ 		font-size: 1.4em;
+ 		text-align: justify;
+		padding: 0.1em; /* hack to remove widow text. */
+
+		z-index: 3;
+	}
+}
+
+
+.story-info {
+	@extend .panel-frontpage;
+	position: relative;
+	text-align: center;
+
+	height: 80vh;	
+
+	background-image: url('../assets/images/about-helmet.jpg');
+	background-size: cover;
+	background-position: center center;
+
+	overflow: hidden; 	
+
+	.color-mask {
+		background-color: rgba($gray-dark, 0.65);
+		z-index: 0;
+	}
+
+	.col-md-offset-3.col-md-6 {
+		margin-top: 10%;
+
+		p {
+			position: relative;
+
+			font-size: 1.4em;
+			text-align: justify;
+			padding: 0.1em; /* hack to remove widow text. */
+
+			z-index: 3;	
+		}
+	}
+}

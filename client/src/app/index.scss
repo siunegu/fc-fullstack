@@ -10,6 +10,7 @@ $gray-base: #414042;
 $gray-dark: #222;
 $gray-light: lighten($gray-base, 46.7%);
 $red-accent: #ee3123;
+$breadcrumb-active-color: $red-accent;
 $text-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
 $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
@@ -33,6 +34,10 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 
  h1, h2, h3, h4 {
  	font-family: 'Orbitron';
+ }
+
+ a {
+ 	transition: 0.3s all ease-in-out;
  }
 
 /**

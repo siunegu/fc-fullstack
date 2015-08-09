@@ -1,7 +1,7 @@
 .contact-container {
   padding-top: 30px;
   font-family: 'Arimo';
-  background: #59595b;
+  background: #3A3A3E;
   height: 400px;
   color:#fff;
   .material-icons {
@@ -27,8 +27,8 @@
 }
 
 .register-container {
-  margin-top:30px;
-  margin-bottom:50px;
+  margin-top:60px;
+  margin-bottom:30px;
 }
 
 .button-container {
@@ -38,11 +38,18 @@
 .mail-info-container {
   @extend .contact-container;
   border-bottom: 2px solid #fff;
-  height:300px;
+  height: 300px;
   img {
     margin-bottom:20px;
   }
   a {
     color:#fff;
   }
+}
+
+#map-canvas {
+  background-image: url(http://maps.googleapis.com/maps/api/staticmap?center=-33.900897,+151.200909&zoom=14&scale=2&size=1200x1200&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C-33.900897,+151.200909);
+  background-size: fixed;
+  background-position: center center;
+  height: 55vh;
 }

@@ -13,9 +13,10 @@ import TechspecController from './techspec/techspec.controller';
 
 import NavbarDirective from '../app/components/navbar/navbar.directive';
 import FooterDirective from '../app/components/directives/footer.directive';
+import GmapDirective from '../app/components/directives/gmap.directive';
 // import SlickDirective from '../app/components/slick/'
 
-angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog'])
+angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog', 'uiGmapgoogle-maps'])
   .constant('moment', moment)
 
   .config(config)
@@ -35,3 +36,5 @@ angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog'])
   .directive('acmeNavbar', () => new NavbarDirective())
 
   .directive('footerDirective', () => new FooterDirective())
+  
+  .directive('gmapDirective', () => new GmapDirective())

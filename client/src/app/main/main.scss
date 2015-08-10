@@ -44,16 +44,15 @@
 	}
 
 	.col-md-4 {
-		position: relative;
 		img {
-			position: absolute;
+			position: relative;
 			top: 10px;
-
+			margin-bottom: 20px;
 		}
 	}
 
-	.col-md-8 {
-		padding-right: 45px;
+	.col-md-8, .col-md-9 {
+		padding-right: 100px;
 	}
 
 	h2 {

@@ -4,50 +4,55 @@
  * ==========================
  */
 
-.nav.navbar-nav {
-	font-family: 'Orbitron';
-	font-size: 13px;
+ .nav.navbar-nav {	
+ 	font-family: 'Orbitron';
+ 	font-size: 13px;
 
-	position: relative;
-	padding-top: 8px;
+ 	position: relative;
+ 	padding-top: 8px;
+ 	transition: 0.3s all ease-in-out;
 
-	li a {
-		color: $gray-light;
-	}
+ 	.container-fluid {
+ 		padding-bottom: 15px;
+ 	}
 
-	.active > a {
-		transition: 0.3s all ease-in-out;
-		background-color: $gray-dark !important;
-		&:hover {
-			background-color: $gray-dark;
-		}
-	}
-}
+ 	li a {
+ 		color: $gray-light;
+ 	}
 
-.logo-glyph {
-	position: relative;
-	top: 2px;
+ 	.active > a {
+ 		transition: 0.3s all ease-in-out;
+ 		background-color: $gray-dark !important;
+ 		&:hover {
+ 			background-color: $gray-dark;
+ 		}
+ 	}
+ }
 
-	max-height: 60px;
-	min-height: 40px;
+ .logo-glyph {
+ 	position: relative;
+ 	top: 2px;
 
-	padding: 15px 15px;
-}
+ 	max-height: 60px;
+ 	min-height: 40px;
 
-.navbar-right {
-  display: inline-flex;
-	padding-top: 18px;
-	margin-right: 5px;
+ 	padding: 15px 15px;
+ }
 
-	img {
-	position: relative;
+ .navbar-right {
+ 	display: inline-flex;
+ 	padding-top: 18px;
+ 	margin-right: 5px;
 
-	height: 25px;
-	width: 25px;
-	border-radius: 2px;
-	margin-left: 15px;
-	}
-}
+ 	img {
+ 		position: relative;
+
+ 		height: 25px;
+ 		width: 25px;
+ 		border-radius: 2px;
+ 		margin-left: 15px;
+ 	}
+ }
 
 /*
  * ==========================
@@ -56,21 +61,28 @@
  */
 
  .subnav {
-	font-family: 'Orbitron';
- 	z-index: 9999;
-	background-color: #3A3A3E;
-	padding-top: 25px !important;
-	
-	a {
-		position: relative;
-		top: 2px;
-		color: #fff;
-	}
+ 	height: 75px;
+ 	margin-top: 60px;
+ 	position: fixed;
+ 	display: block;
+ 	width: 100vw;
 
-	button {
-		position: relative;
-		bottom: 5px;
-	}
+ 	font-family: 'Orbitron';
+ 	z-index: 9999;
+ 	background-color: rgba(58, 58, 62, 0.56);
+ 	// background-color: #3A3A3E;
+ 	padding-top: 25px !important;
+
+ 	a {
+ 		position: relative;
+ 		top: 2px;
+ 		color: #fff;
+ 	}
+
+ 	button {
+ 		position: relative;
+ 		bottom: 5px;
+ 	}
  }
 
  /*
@@ -79,7 +91,16 @@
   * ==========================
   */
 
- .navbar {margin-bottom:0px;}
+  .navbar-static-top {
+  	position: fixed;
+  	display: block;
+  	width: 100vw;
+  }
+
+  .navbar {
+  	margin-bottom:0px;
+
+  }
 
 
  /*
@@ -88,8 +109,8 @@
   * ==========================
   */
 
- .fc-button {
- 	color: #fff;
- 	background-color: rgba(0,0,0,0.0);
- 	border: 1px solid #fff;
- }
+  .fc-button {
+  	color: #fff;
+  	background-color: rgba(0,0,0,0.0);
+  	border: 1px solid #fff;
+  }

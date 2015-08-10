@@ -1,9 +1,12 @@
+
+
 /*
  * ==========================
  * Carousel
  * ==========================
  */
  .mask-carousel {
+ 	position: relative;
  	height: 97.5%;
  }
 
@@ -15,62 +18,114 @@
 
 	// width: 98.8vw;
 	overflow: hidden;
-	z-index: -1;
+	z-index: -5;
 }
 
+.carousel-vid {
+	position: absolute;
+	bottom: 100px;
+	right: 4%;
+
+	height: 4px;
+	width: 30%;
+	
+	background-position: center center;
+	background-size: cover;
+	background-color: #fff;
+	
+	text-shadow: $text-shadow;	
+
+	transition: all 0.2s ease-in-out;
+
+	a {
+		text-decoration: none !important;
+		text-transform: none !important;
+		color: $red-accent;
+	}
+
+	h4 {
+		position: relative;
+		bottom: 35px;
+	}
+
+	&:hover {
+		height: 20%;
+		border-bottom: 2px solid $red-accent;
+		background-image: url('../assets/images/vid-link.jpg');		
+		box-shadow: $text-shadow;
+		
+		h4 {
+			color: #fff;
+		}
+	}
+}	
 
 .slick-slider {
 	margin-bottom: 0 !important; 
+	z-index: 9999 !important;
 
 }
 
 .slick-dots {
 	bottom: 45px !important;
+	z-index: 9999 !important;
 }
 
 /*
  * ==========================
- * Texture Masks
+ * Carousel-Vid
  * ==========================
  */
-.ngdialog.ngdialog-theme-default .ngdialog-content {
-	width: 60%;
-	background-color: $gray-dark;
-	text-align: justify;
-	
-	.row {
-		margin: 25px;
-		padding: 15px;
-	}
 
-	.col-md-4 {
-		img {
-			position: relative;
-			top: 10px;
-			margin-bottom: 20px;
-		}
-	}
 
-	.col-md-8, .col-md-9 {
-		padding-right: 100px;
-	}
+/*
+ * ==========================
+ * Dialog Infotip
+ * ==========================
+ */
 
-	h2 {
-		color: #fff;
-	}
-}
+ .ngdialog.ngdialog-theme-default .ngdialog-content {
+ 	width: 60%;
+ 	background-color: $gray-dark;
+ 	text-align: justify;
 
-.ngdialog-motion-sensor {
-	background-image: url('../assets/images/motion-sensor-bg.png');
-	background-repeat: no-repeat;
-	background-position: center right;
-}
+ 	.row {
+ 		margin: 25px;
+ 		padding: 15px;
+ 	}
 
-.ngdialog-battery {
-	background-image: url('../assets/images/swap-out-bg.png');
-	background-repeat: no-repeat;
-	background-position: center right;
-}
+ 	.col-md-4 {
+ 		img {
+ 			position: relative;
+ 			top: 10px;
+ 			margin-bottom: 20px;
+ 		}
+ 	}
+
+ 	.col-md-8  {
+ 		padding-right: 100px;
+ 	}
+
+ 	.col-md-9 {
+ 		padding-right: 130px;
+ 	}
+
+ 	h2 {
+ 		color: #fff;
+ 	}
+ }
+
+ .ngdialog-motion-sensor {
+ 	background-image: url('../assets/images/motion-sensor-bg.png');
+ 	background-repeat: no-repeat;
+ 	background-position: center right;
+ }
+
+ .ngdialog-battery {
+ 	background-image: url('../assets/images/swap-out-bg.png');
+ 	background-repeat: no-repeat;
+ 	background-position: center right;
+ }
 
 
 /*
@@ -125,9 +180,11 @@
  		text-shadow: $text-shadow;
  	}
  	h4 {
- 		font-weight: 100;
+ 		font-weight: 500;
  		font-size: 1.6em;
- 		color: #fff;
+ 		// color: $red-accent;
+ 		color: red;
+ 		z-index: 4;
  	}
  	h2 {
  		letter-spacing: -1.4px;
@@ -682,3 +739,37 @@
  		margin-top:0px;
  	}
  }
+
+// ":D" -Anon
+
+// …………………...- *" \ - "::*'\
+// ………………„-^*'' : : „'' : : : :: *„
+// …………..„-* : : :„„--/ : : : : : : : '\
+// …………./ : : „-* . .| : : : : : : : : '|
+// ……….../ : „-* . . . | : : : : : : : : |
+// ………...\„-* . . . . .| : : : : : : : :'|
+// ……….../ . . . . . . '| : : : : : : : :|
+// ……..../ . . . . . . . .'\ : : : : : : : |
+// ……../ . . . . . . . . . .\ : : : : : : :|
+// ……./ . . . . . . . . . . . '\ : : : : : /
+// ….../ . . . . . . . . . . . . . *-„„„„-*'
+// ….'/ . . . . . . . . . . . . . . '|
+// …/ . . . . . . . ./ . . . . . . .|
+// ../ . . . . . . . .'/ . . . . . . .'|
+// ./ . . . . . . . . / . . . . . . .'|
+// '/ . . . . . . . . . . . . . . . .'|
+// '| . . . . . \ . . . . . . . . . .|
+// '| . . . . . . \„_^- „ . . . . .'|
+// '| . . . . . . . . .'\ .\ ./ '/ . |
+// | .\ . . . . . . . . . \ .'' / . '|
+// | . . . . . . . . . . / .'/ . . .|
+// | . . . . . . .| . . / ./ ./ . .|
+// '| . . . . . . . . .'\ .\ ./ '/ . |
+// | .\ . . . . . . . . . \ .'' / . '|
+// | . . . . . . . . . . / .'/ . . .|
+// | . . . . . . .| . . / ./ ./ . .|
+// '| . . . . . . . . .'\ .\ ./ '/ . |
+// | .\ . . . . . . . . . \ .'' / . '|
+// | . . . . . . . . . . / .'/ . . .|
+// | . . . . . . .| . . / ./ ./ . .|
+// '| . . . . . . . . .'\ .\ ./ '/ . |

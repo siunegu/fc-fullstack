@@ -33,7 +33,52 @@
  * Texture Masks
  * ==========================
  */
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+	width: 60%;
+	background-color: $gray-dark;
+	text-align: justify;
+	
+	.row {
+		margin: 25px;
+		padding: 15px;
+	}
 
+	.col-md-4 {
+		position: relative;
+		img {
+			position: absolute;
+			top: 10px;
+
+		}
+	}
+
+	.col-md-8 {
+		padding-right: 45px;
+	}
+
+	h2 {
+		color: #fff;
+	}
+}
+
+.ngdialog-motion-sensor {
+	background-image: url('../assets/images/motion-sensor-bg.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+.ngdialog-battery {
+	background-image: url('../assets/images/swap-out-bg.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+
+/*
+ * ==========================
+ * Texture Masks
+ * ==========================
+ */
  .color-mask {
  	position: absolute;
  	top: 0;
@@ -548,6 +593,7 @@
  		height: 700px;
  		width: 100%;
  		margin: 40px auto;
+ 		z-index: 1;
  	}
  }
 

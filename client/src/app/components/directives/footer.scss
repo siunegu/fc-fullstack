@@ -1,8 +1,9 @@
 footer {
-  border-top: 2px solid #be3429;
-  background: #434244;
+  border-top: 2px solid $red-accent;
+  background: #3A3A3E;
   font-family: 'Arimo';
   .footer-container {
+    margin-top: -2px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 60px;

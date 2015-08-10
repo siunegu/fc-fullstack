@@ -12,7 +12,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       url: '/features',
       templateUrl: 'app/carousel/carousel.html',
       controller: 'MainController',
-      controllerAs: 'main'
+      controllerAs: 'main',
+      reload: true
     })
 
     .state('home.techspecs', {
@@ -26,7 +27,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       url: '/about',
       templateUrl: 'app/about/about.html',
       controller: 'AboutController',
-      controllerAs: 'about'
+      controllerAs: 'about',
+      reload: true
     })
 
     .state('contact', {

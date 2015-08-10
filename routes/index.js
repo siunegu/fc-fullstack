@@ -9,12 +9,15 @@ router.get('/', function(req, res, next) {
 
 router.post('/email', function(req, res) {
   // res.render('index', { title: 'Express' });
-  console.log(req.body);
-  if (!(req.body.event == 'email')){
+  console.log('req.body is...', req.body);
+  // console.log(req.body);
+  if (req.body.event != 'email'){
     return res.status(200).json({
       message: 'ignored'
     })
   };
+
+
 
   // return res.status(200).json({
   //   message: 'this is working'
@@ -36,11 +39,11 @@ router.post('/email', function(req, res) {
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-      from: '<jamesleboeuf@gmail.com>', // sender address
-      to: 'jamesleboeuf@gmail.com', // list of receivers
-      subject: 'Hello ✔', // Subject line
-      text: 'Hello world ✔', // plaintext body
-      html: '<b>Hello world ✔</b>' // html body
+      from: req.body.contactEmail, // The email address of the person who input their email in the form. The customer!!!!
+      to: 'eugene.h.lai@gmail.com', // List people you want to be notified of the signup!!!!!! HERE!!!!
+      subject: 'Preorder Signup', // Subject line
+      // text: 'Preorder Signup description', // plaintext body
+      html: '<b>Preorder Signup:</b><br><p>Name: ' + req.body.contactName + '<p><br><p>Email: ' + req.body.contactEmail + '</p>'  // html body
   };
 
   // send mail with defined transport object
@@ -58,7 +61,5 @@ router.post('/email', function(req, res) {
 
 
 });
-
-module.exports = router;
 
 module.exports = router;

@@ -8,26 +8,27 @@ class ContactController {
   sendEmail(form) {
 
     var data = {
+      event: 'email',
       contactName: form.name,
       contactEmail: form.email
-      // TODO: Add country as data to send
     };
 
     this.$http.post('http://localhost:9030/email', data)
-    .then(function(result){
-      console.log('success is...', result);
-      return result;
-    })
-    .catch(function(error){
-      console.log('error is...', error);
-      return error;
-    })
+      .then(function(result){
+        console.log('success is...', result);
+        return result;
+      })
+      .catch(function(error){
+        console.log('error is...', error);
+        return error;
+      })
 
-    console.log(form);
     this.ngDialog.open({
-      template: '/app/preorder/popupTmpl.html'
+      template: '/app/preorder/submit.html'
     });
   }
+
+
 }
 
 export default ContactController;

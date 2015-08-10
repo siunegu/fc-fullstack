@@ -255,23 +255,22 @@ class PreorderController {
 
   sendEmail(form) {
 
-    // var data = {
-    //   contactName: form.name,
-    //   contactEmail: form.email
-    //   // TODO: Add country as data to send
-    // };
-    //
-    // this.$http.post('http://localhost:9030/email', data)
-    // .then(function(result){
-    //   console.log('success is...', result);
-    //   return result;
-    // })
-    // .catch(function(error){
-    //   console.log('error is...', error);
-    //   return error;
-    // })
+    var data = {
+      event: 'email',
+      contactName: form.name,
+      contactEmail: form.email
+    };
 
-    console.log(form);
+    this.$http.post('http://localhost:9030/email', data)
+      .then(function(result){
+        console.log('success is...', result);
+        return result;
+      })
+      .catch(function(error){
+        console.log('error is...', error);
+        return error;
+      })
+
     this.ngDialog.open({
       template: '/app/preorder/submit.html'
     });

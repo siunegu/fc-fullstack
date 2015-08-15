@@ -1,7 +1,57 @@
 // <!-- 460 x 225 -->
 
-.ngdialog.ngdialog-theme-default .ngdialog-content {
-  background:#3A3A3E;
-  min-width:700px;
+/*
+ * ==========================
+ * Dialog Infotip
+ * ==========================
+ */
 
-}
+ .ngdialog.ngdialog-theme-default .ngdialog-content {
+ 	background-color: rgba(20, 20, 26, 0.75);
+ 	width: 60%;
+ 	text-align: justify;
+
+ 	.row {
+ 		margin: 25px;
+ 		padding: 15px;
+ 	}
+
+ 	.col-md-4 {
+ 		img {
+ 			position: relative;
+ 			top: 10px;
+ 			margin-bottom: 20px;
+ 		}
+ 	}
+
+ 	.col-md-8  {
+ 		position: relative;
+ 		right: 30px;
+ 		padding-right: 100px;
+ 	}
+
+ 	.col-md-9 {
+ 		position: relative;
+ 		right: 30px;
+ 		padding-right: 130px;
+ 	}
+
+ 	h4 {
+ 		font-weight: 700;
+ 		color: #fff;
+ 		padding-bottom: 0.25em; 
+ 		border-bottom: 1px solid red;
+ 	}
+ }
+
+ .ngdialog-motion-sensor {
+ 	background-image: url('../assets/images/motion-sensor-bg.png');
+ 	background-repeat: no-repeat;
+ 	background-position: center right;
+ }
+
+ .ngdialog-battery {
+ 	background-image: url('../assets/images/swap-out-bg.png');
+ 	background-repeat: no-repeat;
+ 	background-position: center right;
+ }

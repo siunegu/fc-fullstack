@@ -5,7 +5,7 @@ class MainController {
     console.log('initialising MainController');
 
     this.ngDialog = ngDialog;
-
+  
     this.slickConfig = {
       autoplay: true,
       draggable: false,

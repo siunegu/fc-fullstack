@@ -26,15 +26,17 @@
 	bottom: 100px;
 	right: 4%;
 
-	height: 4px;
-	width: 30%;
-	
+	height: 200px;
+	width: 400px;
+	border-bottom: 2px solid $red-accent;
+	background-image: url('../assets/images/vid-link.jpg');		
+	box-shadow: $text-shadow;
+	text-shadow: $text-shadow;	
+		
 	background-position: center center;
 	background-size: cover;
 	background-color: #fff;
-	
-	text-shadow: $text-shadow;	
-
+		
 	transition: all 0.2s ease-in-out;
 
 	a {
@@ -49,10 +51,6 @@
 	}
 
 	&:hover {
-		height: 20%;
-		border-bottom: 2px solid $red-accent;
-		background-image: url('../assets/images/vid-link.jpg');		
-		box-shadow: $text-shadow;
 		cursor: pointer;
 
 		h4 {
@@ -70,6 +68,12 @@
 .slick-dots {
 	bottom: 45px !important;
 	z-index: 9999 !important;
+}
+
+// Carousel buttons //
+
+.md-48 {
+	font-size: 48px;
 }
 
 /*

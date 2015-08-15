@@ -1,0 +1,35 @@
+.site-footer {
+    position: relative;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #767676;
+    border-top: 1px solid #eee;
+}
+
+.right {
+    float: right;
+}
+
+.site-footer-links li {
+    display: inline-block;
+    line-height: 16px;
+}
+
+.site-footer-links {
+    margin: 0;
+    list-style: none;
+}
+
+.site-footer .awaken-mark {
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    font-size: 24px;
+    // color: #ccc;
+}

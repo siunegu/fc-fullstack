@@ -1,65 +1,92 @@
-function routerConfig ($stateProvider, $urlRouterProvider) {
+function routerConfig($stateProvider, $urlRouterProvider) {
   'ngInject';
+
+  $urlRouterProvider.otherwise('/home');
+
   $stateProvider
-    .state('home', {
+    .state('root', {
+      url: '',
+      abstract: true,
+      views: {
+        'header': {
+          templateUrl: 'app/header/header.html'
+        },
+        'footer': {
+          templateUrl: 'app/footer/footer.html'
+        }
+      }
+    })
+    .state('root.home', {
       url: '/home',
-      templateUrl: 'app/main/main.html',
-      controller: 'MainController',
-      controllerAs: 'main'
+      views: {
+        'container@': {
+          templateUrl: 'app/main/main.html'
+        }
+      }
     })
-
-    .state('home.features', {
-      url: '/features',
-      templateUrl: 'app/carousel/carousel.html',
-      controller: 'MainController',
-      controllerAs: 'main',
-      reload: true
-    })
-
-    .state('home.techspecs', {
-      url: '/techspecs',
-      templateUrl: 'app/techspec/techspecs.html',
-        controller: 'TechspecController',
-        controllerAs: 'techspec'
-    })
-
-    .state('about', {
+    .state('root.about', {
       url: '/about',
-      templateUrl: 'app/about/about.html',
-      controller: 'AboutController',
-      controllerAs: 'about',
-      reload: true
+      views: {
+        'container@': {
+          templateUrl: 'app/about/about.html'
+        }
+      }
     })
 
-    .state('contact', {
+    .state('root.signup', {
+      url: '/signup',
+      views: {
+        'container@': {
+          templateUrl: 'app/signup/signup.html'
+        }
+      }
+    })
+
+    .state('root.signin', {
+      url: '/signin',
+      views: {
+        'container@': {
+          templateUrl: 'app/signin/signin.html'
+        }
+      }
+    })
+
+    .state('root.howItWorks', {
+      url: '/how-it-works',
+      views: {
+        'container@': {
+          templateUrl: 'app/how-it-works/how-it-works.html'
+        }
+      }
+    })
+
+    .state('root.advisors', {
+      url: '/advisors',
+      views: {
+        'container@': {
+          templateUrl: 'app/advisors/advisors.html'
+        }
+      }
+    })
+
+    .state('root.reset', {
+      url: '/reset-password',
+      views: {
+        'container@': {
+          templateUrl: 'app/reset-password/reset-password.html'
+        }
+      }
+    })
+
+    .state('root.contact', {
       url: '/contact',
-      templateUrl: 'app/contact/contact.html',
-      controller: 'ContactController',
-      controllerAs: 'contact'
+      views: {
+        'container@': {
+          templateUrl: 'app/contact/contact.html'
+        }
+      }
     })
 
-    .state('preorder', {
-      url: '/preorder',
-      templateUrl: 'app/preorder/preorder.html',
-      controller: 'PreorderController',
-      controllerAs: 'preorder'
-    })
-
-    .state('features', {
-      url: '/features',
-      templateUrl: 'app/feature/features.html',
-      controller: 'FeatureController',
-      controllerAs: 'feature'
-    })
-
-    .state('blog', {
-      url: '/blog',
-      templateUrl: 'app/blog/blog.html',
-      controllersAs: 'blog'
-    });
-
-
-  $urlRouterProvider.otherwise('/home/features');
 }
 
 export default routerConfig;

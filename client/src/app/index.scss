@@ -21,10 +21,11 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 // bower:scss
 // endbower
 
-@import "./preorder/preorder";
 @import "./material-design";
-@import "./techspec/techspec";
-@import "./about/about";
+@import "./main/chosen";
+@import "./toaster/toaster";
+@import "./flags/flags";
+// @import "./techspec/techspec";
 
 /*
  * ==========================

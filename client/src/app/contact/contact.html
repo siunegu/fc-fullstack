@@ -1,71 +1,89 @@
+<div class="container main-container">
 
-<div class="contact-container">
-    <div class="container">
-        <div class="row register-container">
-            <div class="col-md-12 text-center">
-                <h3>REGISTER YOUR INTEREST!</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <form name="userForm" class="form-horizontal" ng-submit="preorder.sendEmail(preorder.userForm)">
-                    <div class="form-group">
-                        <div ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-                            <div class="left-inner-addon">
-                                <i class="material-icons">face</i>
-                                <input type="text" name="name" class="form-control" placeholder="Name" ng-model="preorder.userForm.name" ng-maxlength="60" ng-minlength="2" required />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
-                            <div class="left-inner-addon">
-                                <i class="material-icons">email</i>
-                                <input type="email" name="email" placeholder="Email" class="form-control" ng-model="preorder.userForm.email" ng-maxlength="254" required />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="form-group">
-            <div class="col-xs-6" ng-class="{ 'has-error' : userForm.country.$invalid && !userForm.country.$pristine }">
-              <select ng-model="preorder.userForm.country" class="form-control" ng-options="country.name for country in preorder.countryList track by country.code" required >
-                <option value="">Select a Country</option>
-              </select>
-            </div>
-          </div> -->
-                    <div class="form-group">
-                        <div class="text-center button-container">
-                            <button class="btn fc-button" type="submit" name="Submit" value="Submit">PRE-ORDER</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
-</div>
+  <div class="col-md-4 col-md-offset-4 login_base">
+    <h1>Contact us</h1>
+    <hr>
 
-<div id="map-canvas">
-  <div id="marker">
-    <div id="inner-marker"></div>
+    <p>Please feel free to send us a message at any time using the form below. We will always respond as quickly as we can.</p>
+
+    <form action="" method="post">
+      <input type="hidden" name="csrfmiddlewaretoken" value="lvg8tXE4HPXj1NiFEVPH5C3nheHRGc74">
+
+
+      <p>
+
+
+
+
+
+
+      </p>
+      <div class="form-group">
+
+
+        <label class="control-label  " for="id_name">Your name</label>
+
+
+        <div class=" ">
+          <input class=" form-control" id="id_name" maxlength="100" name="name" type="text">
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="form-group">
+
+
+        <label class="control-label  " for="id_email">Your email address</label>
+
+
+        <div class=" ">
+          <input class=" form-control" id="id_email" maxlength="200" name="email" type="email">
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="form-group">
+
+
+        <label class="control-label  " for="id_body">Your message</label>
+
+
+        <div class=" ">
+          <textarea class=" form-control" cols="40" id="id_body" name="body" rows="10"></textarea>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+      <p></p>
+
+
+      <input type="submit" class="btn btn-primary btn-block" value="Contact Us">
+    </form>
+    <br>
+    <br>
+
   </div>
-</div>
 
-<div class="mail-info-container ">
-    <div class="container ">
-        <div class="row ">
-            <div class="col-md-12 text-center ">
-                <img src="../assets/images/forcite-logo.png " alt="... " class="img-rounded ">
-                <h4>Suite 1B level 2</h4>
-                <h4>204-218 Botany Rd</h4>
-                <h4>Alexandria 2015</h4>
-                <h4>Sydney NSW, Australia</h4>
-                <br>
-                <span>Please e-mail:</span>
-                <p><a ng-href="mailto:info@forcite.com.au ">info@forcite.com.au</a></p>
-            </div>
-        </div>
-    </div>
+  <br>
+  <br>
 </div>
-<footer-directive></footer-directive>
-

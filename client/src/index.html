@@ -17,7 +17,7 @@
   <!-- inject:css -->
   <!-- css files will be automatically insert here -->
   <!-- endinject -->
-  <!-- endbuild -->  
+  <!-- endbuild -->
   <script src='//maps.googleapis.com/maps/api/js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 </head>
@@ -26,33 +26,12 @@
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <nav ng-cloak class="navbar navbar-static-top navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a ui-sref="home.features">
-          <img class="logo-glyph" src="../assets/images/logo-glyph.png" >
-        </a>
-      </div>
+<div id="wrap">
+  <div ui-view="header"></div>
+  <div ui-view="container"></div>
+</div>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-        <ul class="nav navbar-nav">
-          <li><a ui-sref="home.features" ui-sref-active="active">Home</a></li>
-          <li><a ui-sref="about" ui-sref-active="active">About</a></li>
-          <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
-          <li><a ui-sref="preorder" ui-sref-active="active">Preorder</a></li>
-        </ul>
-
-        <ul class="navbar-right">
-          <li><a href="https://www.facebook.com/forcitehelmetsystems"><img src="../assets/images/facebook.png"></a></li>
-          <li><a href="https://instagram.com/forcitehelmets/"><img src="../assets/images/instagram.png"></a></li>
-          <li><a href="https://twitter.com/forcitehelmets"><img src="../assets/images/twitter.png"></a></li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
-  <div ui-view></div>
+<div ui-view="footer"></div>
 
   <!-- build:js(src) scripts/vendor.js -->
   <!-- bower:js -->

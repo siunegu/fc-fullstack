@@ -18,7 +18,8 @@ class ContactController {
 
     var req = {
      method: 'POST',
-     url: 'http://localhost:9030/email',
+     // url: 'http://localhost:9030/email',
+     url: 'https://secret-river-5414.herokuapp.com/email',
      headers: {
        'Content-Type': 'application/json'
      },

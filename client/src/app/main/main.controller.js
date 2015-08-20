@@ -22,7 +22,7 @@ class MainController {
 
   openModal(htmlFile){
     this.ngDialog.open({
-      template: './app/main/' + htmlFile + '.html'
+      template: './app/dialogs/' + htmlFile + '.html' 
     });
   }
 

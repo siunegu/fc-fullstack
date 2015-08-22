@@ -11,8 +11,9 @@ router.post('/email', function(req, res) {
 
 
   console.log(req.body);
-  console.log('Email params:' + req.body.contactName);
-  console.log('Email params:' + req.body.contactEmail);
+  console.log('Email params (name):' + req.body.contactName);
+  console.log('Email params (email):' + req.body.contactEmail);
+  console.log('Email params (comments):' + req.body.comments);
 
   // if (!(req.body.includes'email')){
   //   return res.status(200).json({
@@ -48,12 +49,20 @@ router.post('/email', function(req, res) {
   // };
 
   // setup e-mail data with unicode symbols
+  // var mailOptions = {
+  //     from: '<'+ req.body.contactEmail +'>', //grab form data from the request body , // sender address
+  //     to: 'equalsbrackets@gmail.com', // list of receivers
+  //     subject: 'Interest ✔', // Subject line
+  //     text: 'Hello world ✔', // plaintext body
+  //     html: '<b>Hello world ✔</b>' // html body
+  // };
+
   var mailOptions = {
-      from: '<'+ req.body.contactEmail +'>', //grab form data from the request body , // sender address
-      to: 'equalsbrackets@gmail.com', // list of receivers
-      subject: 'Interest ✔', // Subject line
-      text: 'Hello world ✔', // plaintext body
-      html: '<b>Hello world ✔</b>' // html body
+    from: req.body.contactEmail, // The email address of the person who input their email in the form. The customer!!!!
+    to: 'jamesleboeuf@gmail.com', // List people you want to be notified of the signup!!!!!! HERE!!!!
+    subject: 'Preorder Signup', // Subject line
+    // text: 'Preorder Signup description', // plaintext body
+    html: '<b>Preorder Signup:</b><br><p>Name: ' + req.body.contactName + '<p><br><p>Email: ' + req.body.contactEmail + '</p><p>Comments: ' + req.body.comments + '</p>'   // html body
   };
 
 
@@ -62,11 +71,10 @@ router.post('/email', function(req, res) {
       if(error){
           return console.log('Error message:' + error);
       } else {
-        return 
         console.log('Delivering' + info.response);
-        res.status(200).json({
+        return res.status(200).json({
           message: info.response
-        })        
+        })
       }
 
   });
@@ -77,7 +85,5 @@ router.post('/email', function(req, res) {
 
 
 });
-
-module.exports = router;
 
 module.exports = router;

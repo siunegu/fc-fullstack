@@ -54,7 +54,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 
     .state('blog', {
       url: '/blog',
-      templateUrl: 'app/blog/blog.html',
+      // templateUrl: 'app/blog/blog.html',
+      templateUrl: 'app/components/under_construction.html',
       controllersAs: 'blog'
     });
 

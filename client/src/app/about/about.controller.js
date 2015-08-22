@@ -9,6 +9,19 @@ class AboutController {
     // this.toastr = toastr;
 
     // this.activate($timeout, webDevTec);
+
+    this.slickConfig = {
+      autoplay: true,
+      draggable: false,
+      autoplaySpeed: 6000,
+      method: {},
+      event: {
+        beforeChange: function (event, slick, currentSlide, nextSlide) {
+        },
+        afterChange: function (event, slick, currentSlide, nextSlide) {
+        }
+      }
+    };    
   }
 
   // activate($timeout, webDevTec) {

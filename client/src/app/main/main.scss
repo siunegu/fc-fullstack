@@ -30,20 +30,22 @@
  */
 
 .carousel-vid {
+	// width: 26.25%;
+	height: 240px;
+
 	position: absolute;
 	bottom: 6%;
 	right: 4%;
 	margin-bottom: 30px;
 	margin-right: 30px;
-
-	height: 200px;
-	width: 400px;
 	
 	border-top: 1px solid red;
 
-	background-image: url('../assets/images/vid-link.jpg');		
 	box-shadow: $text-shadow;
 	text-shadow: $text-shadow;	
+
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
 		
 	background-position: center center;
 	background-size: cover;
@@ -58,6 +60,9 @@
 	h4 {
 		position: relative;
 		bottom: 35px;
+	}
+
+	video {
 	}
 
 	.carousel-vid-button {
@@ -90,22 +95,6 @@
 		}
 	}
 }	
-
-// Todo:
-// @-webkit-keyframes borderfill {
-// 	0% {
-// 		border-right: 1px solid red;
-// 	}
-// 	25% {
-// 		border-bottom: 1px solid red;
-// 	}
-// 	50% {
-// 		border-left: 1px solid red;
-// 	}	
-// 	100% {
-// 		border-top: 1px solid red;
-// 	}	
-// }
 
 .slick-slider {
 	margin-bottom: 0 !important; 
@@ -316,7 +305,7 @@ button {
 
 		.panel-icon {
 			position: relative;
-			left: 28px;
+			left: 33px;
 			width: 120px;
 		}
 
@@ -498,6 +487,7 @@ button {
  	text-align: center;
  	margin-top: -50px;
  	height: 100vh;
+ 	padding-bottom: 77%;
 
  	background-color: $gray-base;
  	background-image: url('../assets/images/camera-system.jpg');
@@ -510,7 +500,7 @@ button {
 
 
 	.center-content {
-		padding-top: 8%;
+		padding-top: 5%;
 		padding-bottom: 0;
 
 		color: #fff;
@@ -552,6 +542,8 @@ button {
 		strong {
 			position: relative;
 			right: 12px;
+
+			line-height: 2;
 			text-transform: uppercase;
 			color: #fff;		
 		}
@@ -731,11 +723,21 @@ button {
  	margin-top:100px;
 	
  	.icon-box {
+		padding-top: 25%;
+		width: 175px;
+    height: 245px;
+
+		border: 1px solid red;
+		border-radius: 2px;
+
 		transition: all 0.2s ease-in-out;  
+
  		&:hover {
  			filter: saturate(90%);
- 			color: red;
+ 			background-color: $red-accent;
+ 			border-color: 1px solid $red-accent;
 			cursor: pointer;
+
  		} 		
  	}
 

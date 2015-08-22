@@ -5,8 +5,6 @@
     console.log('initialising MainController');
 
     angular.element(document).ready(function(){
-      ngDialog = ngDialog;
-
       $scope.slickConfig = {
         autoplay: true,
         draggable: false,

@@ -11,7 +11,7 @@
 
  	position: relative;
  	padding-top: 8px;
-
+  
  	.container-fluid {
  		padding-bottom: 15px;
  	}
@@ -22,40 +22,46 @@
 
  }
 
-  .active {
-    color: red !important;
+ .active {
+  color: red !important;
+}
+
+.logo-glyph {
+  position: relative;
+  top: 2px;
+
+  max-height: 60px;
+  min-height: 40px;
+
+  padding: 15px 15px;
+}
+
+.navbar-links-right {
+  position: absolute !important;
+  right: 155px;  
+  text-transform: uppercase;  
+}
+
+.navbar-right {
+  display: inline-flex;
+  padding-top: 18px;
+  margin-right: 15px;
+
+  img {
+   position: relative;
+
+   height: 25px;
+   width: 25px;
+   border-radius: 2px;
+   margin-left: 15px;
+
+   transition: 0.3s all ease-in-out;
+
+   &:hover {
+    filter: invert(75%);
   }
-
- .logo-glyph {
- 	position: relative;
- 	top: 2px;
-
- 	max-height: 60px;
- 	min-height: 40px;
-
- 	padding: 15px 15px;
- }
-
- .navbar-right {
- 	display: inline-flex;
- 	padding-top: 18px;
- 	margin-right: 15px;
-
- 	img {
- 		position: relative;
-
- 		height: 25px;
- 		width: 25px;
- 		border-radius: 2px;
- 		margin-left: 15px;
-    
-    transition: 0.3s all ease-in-out;
-
-    &:hover {
-      filter: invert(75%);
-    }
- 	}
- }
+}
+}
 
 /*
  * ==========================
@@ -86,13 +92,21 @@
     &:hover {      
       border-bottom: 1px solid red;
     }
- 	}
+  }
 
- 	button {
- 		position: relative;
- 		bottom: 5px;
- 	}
+  button {
+   position: relative;
+   bottom: 5px;
  }
+}
+
+
+.navbar-inner {
+  .container {
+    min-width: 88%;
+  }
+}
+
 
  /*
   * ==========================
@@ -101,9 +115,11 @@
   */
 
   .navbar-static-top {
+    transition: all 0.2s ease-in-out;  
   	position: fixed !important;
-  	display: block;
-  	width: 100vw;
+    top: 0;
+    display: block;
+    width: 100vw;
   }
 
   .navbar {
@@ -121,13 +137,13 @@
   .fc-button {
     padding-top: 8px;
 
-  	color: #fff;
-  	background-color: rgba(0,0,0,0.0);
-  	border: 1px solid #fff;
+    color: #fff;
+    background-color: rgba(0,0,0,0.0);
+    border: 1px solid #fff;
     transition: 0.3s all ease-in-out;
 
     &:hover {
      color: cyan;
      border: 1px solid $red-accent; 
-    }
-  }
+   }
+ }

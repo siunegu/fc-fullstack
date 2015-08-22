@@ -255,30 +255,38 @@ class PreorderController {
 
   sendEmail(form) {
 
-    // var data = {
-    //   contactName: form.name,
-    //   contactEmail: form.email
-    //   // TODO: Add country as data to send
-    // };
-    //
-    // this.$http.post('http://localhost:9030/email', data)
-    // .then(function(result){
-    //   console.log('success is...', result);
-    //   return result;
-    // })
-    // .catch(function(error){
-    //   console.log('error is...', error);
-    //   return error;
-    // })
+    var data = {
+      contactName: form.name,
+      contactEmail: form.email
+      // TODO: Add country as data to send
+    };
+    
+    var req = {
+     method: 'POST',
+     url: 'http://localhost:9030/email',
+     // url: 'https://secret-river-5414.herokuapp.com/email',
+     headers: {
+       'Content-Type': 'application/json'
+     },
+     data: data
+    };
 
-    console.log(form);
-    this.ngDialog.open({
-      template: '/app/preorder/submit.html'
+    this.$http(req)
+    .then((result) => {
+      console.log('success is...', result);
+      this.ngDialog.open({
+        template: '/app/preorder/submit.html'
+      });        
+      return result;      
+    })
+    .catch((error) => {
+      console.log('error is...', error);
+      return error;
     });
+
+  
   }
 
-
-
-  }
+}
 
 export default PreorderController;

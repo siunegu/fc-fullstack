@@ -45,12 +45,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controllerAs: 'preorder'
     })
 
-    .state('features', {
-      url: '/features',
-      templateUrl: 'app/feature/features.html',
-      controller: 'FeatureController',
-      controllerAs: 'feature'
-    })
+    // .state('features', {
+    //   url: '/features',
+    //   templateUrl: 'app/feature/features.html',
+    //   controller: 'FeatureController',
+    //   controllerAs: 'feature'
+    // })
 
     .state('blog', {
       url: '/blog',

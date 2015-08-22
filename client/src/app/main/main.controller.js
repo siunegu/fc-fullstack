@@ -1,23 +1,42 @@
 class MainController {
 
-  constructor ($timeout, ngDialog) {
+  constructor ($timeout, ngDialog, $scope, $document) {
     'ngInject';
     console.log('initialising MainController');
 
-    this.ngDialog = ngDialog;
+    angular.element(document).ready(function () {
+      $scope.ngDialog = ngDialog;
 
-    this.slickConfig = {
-      autoplay: true,
-      draggable: false,
-      autoplaySpeed: 3000,
-      method: {},
-      event: {
-        beforeChange: function (event, slick, currentSlide, nextSlide) {
-        },
-        afterChange: function (event, slick, currentSlide, nextSlide) {
+      $scope.slickConfig = {
+        autoplay: true,
+        draggable: false,
+        autoplaySpeed: 3000,
+        method: {},
+        event: {
+          beforeChange: function (event, slick, currentSlide, nextSlide) {
+          },
+          afterChange: function (event, slick, currentSlide, nextSlide) {
+          }
         }
-      }
-    };
+      };
+    });
+
+    // this.ngDialog = ngDialog;
+
+
+
+    // this.slickConfig = {
+    //   autoplay: true,
+    //   draggable: false,
+    //   autoplaySpeed: 3000,
+    //   method: {},
+    //   event: {
+    //     beforeChange: function (event, slick, currentSlide, nextSlide) {
+    //     },
+    //     afterChange: function (event, slick, currentSlide, nextSlide) {
+    //     }
+    //   }
+    // };
   }
 
   openModal(htmlFile){

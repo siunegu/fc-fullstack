@@ -11,20 +11,27 @@
 
  	position: relative;
  	padding-top: 8px;
-  
+
  	.container-fluid {
- 		padding-bottom: 15px;
+ 		padding-bottom: 16px !important;
  	}
 
  	li a {
- 		color: $gray-light;
- 	}
+ 		color: #fff;
 
- }
+    &:hover {
+      color: red;      
+    }
+  }
 
- .active {
-  color: red !important;
+  .active {
+    color: red !important;
+    border-bottom: 1px solid #3A3A3E;
+  }
+
 }
+
+
 
 .logo-glyph {
   position: relative;
@@ -98,6 +105,11 @@
    position: relative;
    bottom: 5px;
  }
+
+ .active {
+  color: cyan;
+  border-bottom: 1px solid red;
+}
 }
 
 
@@ -116,10 +128,11 @@
 
   .navbar-static-top {
     transition: all 0.2s ease-in-out;  
-  	position: fixed !important;
+    position: fixed !important;
     top: 0;
     display: block;
     width: 100vw;
+    z-index: 9999999;
   }
 
   .navbar {

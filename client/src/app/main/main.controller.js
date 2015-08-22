@@ -9,7 +9,7 @@ class MainController {
     this.slickConfig = {
       autoplay: true,
       draggable: false,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 6000,
       method: {},
       event: {
         beforeChange: function (event, slick, currentSlide, nextSlide) {

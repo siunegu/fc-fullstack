@@ -1,31 +1,41 @@
 class MainController {
 
-  constructor ($timeout, ngDialog) {
-    'ngInject';
-    console.log('initialising MainController');
+    constructor($timeout, ngDialog, $scope, $document) {
+        'ngInject';
+        console.log('initialising MainController');
 
-    this.ngDialog = ngDialog;
-  
-    this.slickConfig = {
-      autoplay: true,
-      draggable: false,
-      autoplaySpeed: 6000,
-      method: {},
-      event: {
-        beforeChange: function (event, slick, currentSlide, nextSlide) {
-        },
-        afterChange: function (event, slick, currentSlide, nextSlide) {
-        }
-      }
-    };
-  }
+        angular.element(document).ready(function() {
+            $scope.ngDialog = ngDialog;
 
-  openModal(htmlFile){
-    this.ngDialog.open({
-      template: './app/dialogs/' + htmlFile + '.html' 
-    });
-  }
+            $scope.slickConfig = {
+                autoplay: true,
+                draggable: false,
+                autoplaySpeed: 6000,
+                method: {},
+                event: {
+                    beforeChange: function(event, slick, currentSlide, nextSlide) {},
+                    afterChange: function(event, slick, currentSlide, nextSlide) {}
+
+                }
+            };
+
+            $scope.openModal = function(htmlFile) {
+                $scope.ngDialog.open({
+                    template: './app/dialogs/' + htmlFile + '.html'
+                });
+            };
+
+        });
+    }
+    
+
+    openModal(htmlFile) {
+        this.ngDialog.open({
+            template: './app/dialogs/' + htmlFile + '.html'
+        });
+    }
 
 }
 
-export default MainController;
+export
+default MainController;

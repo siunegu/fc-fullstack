@@ -1,35 +1,36 @@
 <div class="">
-    
-        <a href="https://www.youtube.com/watch?v=-aBNWK6UsRY">
         <div class="carousel-vid">
-            <i class="material-icons carousel-vid-button">play_arrow</i>
+            <!-- <i class="material-icons carousel-vid-button">play_arrow</i> -->
+<!--             <video ng-cloak autoplay loop class="">
+                <source src="https://youtu.be/-aBNWK6UsRY" type="video/webm">
+            </video>    -->     
+           <iframe width="422.5" height="240" src="https://www.youtube.com/embed/-aBNWK6UsRY" frameborder="0" allowfullscreen></iframe>
         </div>
-        </a>
-    <button ng-click="main.slickConfig.method.slickPrev()" data-role="none" class="" aria-label="Previous" role="button" style="
-        position: absolute;
-        z-index: 9999;
-        color: #fff;
-        background-color: transparent;
-        border: 0;
-        height: 50px;
-        width: 50px;
-        top: 50%;
-        left: 8px;
-    " id="previous"><i class="material-icons md-48">keyboard_arrow_left</i></button>  
-    <button ng-click="main.slickConfig.method.slickNext()" data-role="none" class="" aria-label="Previous" role="button" style="
-        position: absolute;
-        z-index: 9999;
-        color: #fff;
-        background-color: transparent;
-        border: 0;
-        height: 50px;
-        width: 50px;
-        top: 50%;
-        right: 8px;
-    " id="previous"><i class="material-icons md-48">keyboard_arrow_right</i></button>      
-    <section ng-cloak class="carousel">   
-        <slick settings="main.slickConfig" lazy-load="ondemand" slides-to-scroll="1">    
 
+    <button ng-click="slickConfig.method.slickPrev()" data-role="none" class="" aria-label="Previous" role="button" style="
+    position: absolute;
+    z-index: 9999;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 8px;
+    " id="previous"><i class="material-icons md-48">keyboard_arrow_left</i></button>
+    <button ng-click="slickConfig.method.slickNext()" data-role="none" class="" aria-label="Next" role="button" style="
+    position: absolute;
+    z-index: 9999;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    right: 8px;
+    " id="previous"><i class="material-icons md-48">keyboard_arrow_right</i></button>
+    <section ng-cloak class="carousel">
+        <slick settings="slickConfig" lazy-load="ondemand" slides-to-scroll="1">
         <img src="../assets/images/carousel/hero-slide.jpg" alt="">
         <img src="../assets/images/carousel/slide-app.jpg" alt="">
         <img src="../assets/images/carousel/slide-1.jpg" alt="">
@@ -46,8 +47,7 @@
                 <img src="../assets/images/grab-n-go-icons.png">
             </span>
             <span class="row">
-                <span class="col-xs-2"><h4>01.</h4></span>
-                <span class="col-xs-8">
+                <span class="col-xs-offset-2 col-xs-8">
                     <h2><span style="color:red;">Grab</span> it and <span style="color:red;">go!</span></h2>
                     <p>
                         When fresh powder is calling you don’t have time to carry
@@ -64,8 +64,7 @@
     <div class="container">
         <div class="col-md-8">
             <span class="row">
-                <span class="col-xs-1"><h4>02.</h4></span>
-                <span class="col-xs-3"><img class="panel-icon" src="../assets/images/never-ski-alone-icon.png"></span>
+                <span class="col-xs-offset-1 col-xs-3"><img class="panel-icon" src="../assets/images/never-ski-alone-icon.png"></span>
             </span>
             <span class="row">
                 <span class="col-xs-6">
@@ -90,7 +89,6 @@
     <div class="container">
         <div class="center-content">
             <span class="row">
-                <h4>03.</h4>
                 <img class="panel-icon" src="../assets/images/relive-awesome-icon.png">
             </span>
             <span class="row">
@@ -116,8 +114,7 @@
     <div class="container">
         <div class="col-md-offset-8 col-md-8">
             <span class="row">
-                <span class="col-xs-1"><h4>04.</h4></span>
-                <span class="col-xs-3"><img class="panel-icon" src="../assets/images/full-on-protection-icon.png"></span>
+                <span class="col-xs-offset-1 col-xs-3"><img class="panel-icon" src="../assets/images/full-on-protection-icon.png"></span>
             </span>
             <span class="row">
                 <span class="col-xs-6">
@@ -154,8 +151,8 @@
                 <p>
                     Shoots bump-free HD video footage that makes every one of your runs look
                 </p>
-                <strong>
-                Like PRO material.
+                <strong style="margin-top: 20px;">
+                Like PRO footage.
                 </strong>
             </span>
         </div>
@@ -203,24 +200,32 @@
             </div>
             <div class="icon-container">
                 <div class="row">
-                    <div class="col-xs-3 col-sm-3 col-md-3 icon-box" ng-click="main.openModal('impact')">
-                        <img src="../assets/images/impact-sensor.png" alt="">
-                        <h5>IMPACT</h5>
-                        <h5 class="zero-margin-top">SENSOR</h5>
+                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openModal('impact')">
+                        <div class="icon-box">
+                            <img src="../assets/images/impact-sensor.png" alt="">
+                            <h5>IMPACT</h5>
+                            <h5 class="zero-margin-top">SENSOR</h5>
+                        </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 icon-box" ng-click="main.openModal('motion')">
-                        <img src="../assets/images/motion-sensor.png" alt="">
-                        <h5>MOTION</h5>
-                        <h5 class="zero-margin-top">SENSOR</h5>
+                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openModal('motion')">
+                        <div class="icon-box">
+                            <img src="../assets/images/motion-sensor.png" alt="">
+                            <h5>MOTION</h5>
+                            <h5 class="zero-margin-top">SENSOR</h5>
+                        </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 icon-box" ng-click="main.openModal('gps')">
-                        <img src="../assets/images/gps.png" alt="">
-                        <h5>GPS</h5>
+                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openModal('gps')">
+                        <div class="icon-box">
+                            <img src="../assets/images/gps.png" alt="">
+                            <h5>GPS</h5>
+                        </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 icon-box" ng-click="main.openModal('battery')">
-                        <img src="../assets/images/swap-out.png" alt="">
-                        <h5>SWAP OUT</h5>
-                        <h5 class="zero-margin-top">5-6HR BATTERY</h5>
+                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openModal('battery')">
+                        <div class="icon-box">
+                            <img src="../assets/images/swap-out.png" alt="">
+                            <h5>SWAP OUT</h5>
+                            <h5 class="zero-margin-top">5-6HR BATTERY</h5>
+                        </div>
                     </div>
                 </div>
             </div>

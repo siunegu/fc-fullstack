@@ -21,6 +21,21 @@
   <script src='//maps.googleapis.com/maps/api/js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>
+
+    // Horrible Hack 0.01 - 
+    // Webkit renders position absolute for nav 
+    // and nav gets stuck on certain elements. 
+    // Reload to fix.
+    document.addEventListener('scroll', function(){
+      var topY = $(".navbar").scrollTop();
+      console.log(topY);
+      if (topY != 0) {
+        location.reload();
+      }
+    }); 
+
+  </script>
 </head>
 <body>
   <!--[if lt IE 10]>
@@ -39,8 +54,7 @@
         <ul class="nav navbar-links-right navbar-nav">
           <li><a ui-sref="home.features" ui-sref-active="active">Home</a></li>
           <li><a ui-sref="about" ui-sref-active="active">About</a></li>
-          <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
-          <li><a ui-sref="preorder" ui-sref-active="active">Preorder</a></li>
+          <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>          
           <li><a ui-sref="blog" ui-sref-active="active">Blog</a></li>
         </ul>
 

@@ -17,7 +17,7 @@ import FooterDirective from '../app/components/directives/footer.directive';
 import GmapDirective from '../app/components/directives/gmap.directive';
 // import SlickDirective from '../app/components/slick/'
 
-angular.module('client', ['ngTouch', 'ui.router', 'slickCarousel', 'ngDialog', 'uiGmapgoogle-maps'])
+angular.module('client', ['slickCarousel', 'ngTouch', 'ui.router', , 'ngDialog'])
   .constant('moment', moment)
 
   .config(config)

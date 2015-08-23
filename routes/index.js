@@ -32,7 +32,7 @@ router.post('/email', function(req, res) {
   var transporter = nodemailer.createTransport({
     service: "Hotmail", // use well known service
     auth: {
-      user: "info@forcite.com.au"
+      user: "info@forcite.com.au",
       pass: "Zeromailsucks4ever?"
     }
   });

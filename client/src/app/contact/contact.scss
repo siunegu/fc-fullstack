@@ -3,7 +3,7 @@
 .contact-container {
   padding-top:40px;
   font-family: 'Arimo';
-
+  position:relative;
 
   background: #3A3A3E;
   height: 470px;
@@ -12,6 +12,7 @@
   .material-icons {
     color:#fff;
   }
+
   input {
     color:#fff;
     background:rgba(0,0,0,0);
@@ -29,6 +30,7 @@
  :-ms-input-placeholder {
    color:#fff;
  }
+
 }
 
 
@@ -47,6 +49,7 @@
   height: 300px;
   img {
     margin-bottom:20px;
+
   }
   a {
     color:#fff;
@@ -108,3 +111,4 @@
     opacity: 0.0;
   }
 }
+

@@ -11,17 +11,21 @@
         <h4 class="thirty-margin-bottom">ORDERS OPEN!</h4>
       </div>
     </div>
-<!-- to be first in line when orders open -->
-
+    <!-- to be first in line when orders open -->
     <div class="row">
       <div class="col-xs-3 col-sm-3 col-md-3"></div>
       <div class="col-xs-6 col-sm-6 col-md-6">
-
         <form name="userForm" class="form-horizontal" ng-submit="preorder.sendEmail(preorder.userForm)">
           <div class="form-group">
             <div ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
               <div class="left-inner-addon">
-                <i class="material-icons">face</i>
+                <!-- <i class="material-icons">face</i> -->
+                <img class="contact-recipient-icon" src="../assets/images/contact/recipient-sm-icon.png" style="
+                position: absolute;
+                left: 10px;
+                top: -28px;
+                width: 22px;
+                ">
                 <input type="text" name="name" class="form-control" placeholder="Name" ng-model="preorder.userForm.name" ng-maxlength="60" ng-minlength="2" required/>
               </div>
             </div>
@@ -56,8 +60,5 @@
       <div class="col-xs-3 col-sm-3 col-md-3"></div>
     </div>
   </div>
-
-
-
 </div>
 <footer-directive></footer-directive>

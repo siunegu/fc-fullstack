@@ -23,17 +23,37 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script>
 
-    // Horrible Hack 0.01 -
-    // Webkit renders position absolute for nav
-    // and nav gets stuck on certain elements.
-    // Reload to fix.
-    document.addEventListener('scroll', function(){
-      var topY = $(".navbar").scrollTop();
-      console.log(topY);
-      if (topY != 0) {
-        location.reload();
-      }
-    });
+
+
+      var everythingLoaded = setInterval(function() {
+        if (/loaded|complete/.test(document.readyState)) {
+          clearInterval(everythingLoaded);
+          init(); // this is the function that gets called when everything is loaded
+        }
+      }, 10);
+
+      var ifslick = setInterval(function() {
+        var slick = document.querySelector('slick');
+        if (!slick) {
+          loaction.reload();
+        }
+      })
+
+
+      // Horrible Hack 0.01 -
+      // Webkit renders position absolute for nav
+      // and nav gets stuck on certain elements.
+      // Reload to fix.
+      document.addEventListener('scroll', function(){
+        var topY = $(".navbar").scrollTop();
+
+        if (topY != 0) {
+          location.reload();
+        }
+      });
+        
+
+
 
   </script>
 </head>

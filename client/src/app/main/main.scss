@@ -730,12 +730,13 @@ button {
 		border: 1px solid red;
 		border-radius: 2px;
 
+		background-color: $red-accent;
 		transition: all 0.2s ease-in-out;  
 
  		&:hover {
  			filter: saturate(90%);
- 			background-color: $red-accent;
  			border-color: 1px solid $red-accent;
+ 			background-color: transparentize($red-accent, 0.8);
 			cursor: pointer;
 
  		} 		

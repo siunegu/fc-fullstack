@@ -14,7 +14,13 @@
                     <div class="form-group">
                         <div ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
                             <div class="left-inner-addon">
-                                <i class="material-icons">face</i>
+                                <!-- <i class="material-icons">face</i> -->
+                                <img class="contact-recipient-icon" src="../assets/images/contact/recipient-sm-icon.png" style="
+                                  position: absolute;
+                                  left: 10px;
+                                  top: 2px;
+                                  width: 22px;
+                                ">
                                 <input type="text" name="name" class="form-control" placeholder="Name" ng-model="contact.userForm.name" ng-maxlength="60" ng-minlength="2" required />
                             </div>
                         </div>

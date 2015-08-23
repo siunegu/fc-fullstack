@@ -33,7 +33,7 @@ router.post('/email', function(req, res) {
     service: "Hotmail", // use well known service
     auth: {
       user: "info@forcite.com.au"
-      // pass: ""
+      pass: "Zeromailsucks4ever?"
     }
   });
 

@@ -24,21 +24,12 @@
   <script>
 
 
-
-      var everythingLoaded = setInterval(function() {
-        if (/loaded|complete/.test(document.readyState)) {
-          clearInterval(everythingLoaded);
-          init(); // this is the function that gets called when everything is loaded
-        }
-      }, 10);
-
-      var ifslick = setInterval(function() {
+      window.onload = function() {
         var slick = document.querySelector('slick');
-        if (!slick) {
-          loaction.reload();
+        if (slick) {
+          slick.setAttribute("style", "height: 100%;");
         }
-      })
-
+      };
 
       // Horrible Hack 0.01 -
       // Webkit renders position absolute for nav
@@ -88,7 +79,10 @@
     </div>
   </div>
 
-  <div ui-view></div>
+  <div ui-view>
+    
+  </div>
+
 
   <!-- build:js(src) scripts/vendor.js -->
   <!-- bower:js -->

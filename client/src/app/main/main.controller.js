@@ -8,7 +8,7 @@
       $scope.slickConfig = {
         autoplay: true,
         draggable: false,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 9000,
         method: {},
         event: {
           beforeChange: function (event, slick, currentSlide, nextSlide) {
@@ -19,6 +19,7 @@
       };
 
       $scope.openImpact = function(){
+        console.log("impact");
         ngDialog.open({template:'<div class="ngdialog-message"><div class="row"><div class="col-md-4"><img src="../assets/images/impact-sensor.png" alt=""></div><div class="col-md-8"><h4>IMPACT PROTECTION</h4><p>Designed from the ground up for safety, the  integrate computer system is housed in a high tensile waterproof capsule for protection.</p></div></div></div><div class="mt"></div>',
       plain: true});
       };

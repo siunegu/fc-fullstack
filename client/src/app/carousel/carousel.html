@@ -4,12 +4,12 @@
 <!--             <video ng-cloak autoplay loop class="">
                 <source src="https://youtu.be/-aBNWK6UsRY" type="video/webm">
             </video>    -->     
-           <iframe width="422.5" height="240" controls="true" src="https://www.youtube.com/embed/-aBNWK6UsRY" frameborder="0" allowfullscreen></iframe>
+           <iframe ng-cloak width="422.5" height="240" controls="true" src="https://www.youtube.com/embed/eMJZYYzYMzk" frameborder="0" allowfullscreen></iframe>
         </div>
 
     <button ng-click="slickConfig.method.slickPrev()" data-role="none" class="" aria-label="Previous" role="button" style="
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     color: #fff;
     background-color: transparent;
     border: 0;
@@ -20,7 +20,7 @@
     " id="previous"><i class="material-icons md-48">keyboard_arrow_left</i></button>
     <button ng-click="slickConfig.method.slickNext()" data-role="none" class="" aria-label="Next" role="button" style="
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     color: #fff;
     background-color: transparent;
     border: 0;
@@ -31,10 +31,10 @@
     " id="previous"><i class="material-icons md-48">keyboard_arrow_right</i></button>
     <section ng-cloak class="carousel">
         <slick settings="slickConfig" lazy-load="ondemand" slides-to-scroll="1">
-        <img src="../assets/images/carousel/hero-slide.jpg" alt="">
-        <img src="../assets/images/carousel/slide-app.jpg" alt="">
-        <img src="../assets/images/carousel/slide-1.jpg" alt="">
         <img src="../assets/images/carousel/slide-2.jpg" alt="">
+        <img src="../assets/images/carousel/slide-1.jpg" alt="">
+        <img src="../assets/images/carousel/slide-app.jpg" alt="">
+        <img src="../assets/images/carousel/hero-slide.jpg" alt="">
         <!-- <img src="../assets/images/carousel/slide-3.jpg" alt=""> -->
         </slick>
     </section>
@@ -190,10 +190,10 @@
     <div class="container">
         <div class="center-content">
             <span class="row">
-                <img class="panel-icon" src="../assets/images/eon-logo.png">
+                <img style="left: -1px;" class="panel-icon" src="../assets/images/eon-logo.png">
             </span>
-            <div class="row">
-                <div class="col-md-offset-4 col-md-6">
+            <div class="row"  style="display: table">
+                <div style="display: table-cell; width: 30%;">
                     <p>
                         The EON system is a custom built computing system. It is the heart of Forcite’s products, hosting 4 core processors to power all the functions and small enough to fit safely into the Forcite helmets.
                     </p>
@@ -201,36 +201,37 @@
             </div>
             <div class="icon-container">
                 <div class="row">
-                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openModal('impact')">
+                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openImpact()">
                         <div class="icon-box">
                             <img src="../assets/images/impact-sensor.png" alt="">
                             <h5>IMPACT</h5>
                             <h5 class="zero-margin-top">SENSOR</h5>
                         </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openModal('motion')">
+                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openMotion()">
                         <div class="icon-box">
                             <img src="../assets/images/motion-sensor.png" alt="">
                             <h5>MOTION</h5>
                             <h5 class="zero-margin-top">SENSOR</h5>
                         </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openModal('gps')">
+                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openGps()">
                         <div class="icon-box">
                             <img src="../assets/images/gps.png" alt="">
                             <h5>GPS</h5>
                         </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openModal('battery')">
+                    <div class="col-xs-3 col-sm-3 col-md-3" ng-click="openBattery()">
                         <div class="icon-box">
                             <img src="../assets/images/swap-out.png" alt="">
-                            <h5>SWAP OUT</h5>
-                            <h5 class="zero-margin-top">5-6HR BATTERY</h5>
+                            <h5>5-6HR</h5>
+                            <h5 class="zero-margin-top">BATTERY</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </section>
 </section>
 <footer-directive></footer-directive>

@@ -1,4 +1,5 @@
 var express = require('express');
+var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
@@ -59,7 +60,8 @@ router.post('/email', function(req, res) {
 
   var mailOptions = {
     from: req.body.contactEmail, // The email address of the person who input their email in the form. The customer!!!!
-    to: 'jamesleboeuf@gmail.com', // List people you want to be notified of the signup!!!!!! HERE!!!!
+    // to: 'jamesleboeuf@gmail.com', // List people you want to be notified of the signup!!!!!! HERE!!!!
+    to: 'info@forcite.com.au', // List people you want to be notified of the signup!!!!!! HERE!!!!
     subject: 'Preorder Signup', // Subject line
     // text: 'Preorder Signup description', // plaintext body
     html: '<b>Preorder Signup:</b><br><p>Name: ' + req.body.contactName + '<p><br><p>Email: ' + req.body.contactEmail + '</p><p>Comments: ' + req.body.comments + '</p>'   // html body

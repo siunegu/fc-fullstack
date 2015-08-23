@@ -1,8 +1,11 @@
 footer {
+  padding-top: 30px;
   background: $gray-dark;
-  font-family: 'Arimo';
+  margin-top: -26px;
+  border-top: 1px solid $red-accent;
+
   .footer-container {
-    margin-top: -2px;
+    margin-top:20px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 30px;
@@ -11,7 +14,7 @@ footer {
     padding-right: 60px;
     color: #fff;
     .logo-container {
-      margin-top:20px;
+      
       img {
         margin-bottom:20px;
       }
@@ -31,8 +34,15 @@ footer {
     .list-unstyled {
       li {
         a {
-          font-size:18px;
+          font-family: 'Bebas Neue';
+          font-size: 2.4em;
+          line-height: 0.86;
+          font-weight: 500;            
           color:#fff;
+          &:hover {
+            text-decoration: none;
+
+          }
         }
         margin-bottom:5px;
       }

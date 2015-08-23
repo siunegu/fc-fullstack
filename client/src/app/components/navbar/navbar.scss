@@ -9,7 +9,7 @@
  	font-family: 'Orbitron';
  	font-size: 13px;
 
- 	position: fixed;
+ 	position: static;
  	padding-top: 8px;
   
 
@@ -81,7 +81,7 @@
  .subnav {
  	height: 75px;
  	margin-top: 60px;
- 	position: fixed;
+ 	position: static;
  	display: block;
  	width: 100vw;
 

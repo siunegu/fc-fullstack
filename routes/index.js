@@ -19,6 +19,53 @@ router.post('/email', function(req, res) {
     console.log('Email params (comments):' + req.body.comments);
 
 
+    var mandrillTransport = require('nodemailer-mandrill-transport');
+     
+    var transport = nodemailer.createTransport(mandrillTransport({
+      auth: {
+        apiKey: 'key'
+      }
+    }));
+     
+    transport.sendMail({
+      to: 'user@example.com',
+      subject: 'Hello',
+      html: '<p>How are you?</p>'
+    }, function(err, info) {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(info);
+      }
+    });
+
+
+// MANDRILL TEST -2
+
+// var mailer   = require("mailer")
+//   , username = "equalsbrackets@gmail.com"
+//   , password = "8RrMuPKMVL-7x9jjKB6xRA";
+
+// mailer.send(
+//   { host:           "smtp.mandrillapp.com"
+//   , port:           25
+//   , to:             "info@forcite.com.au"
+//   , from:           req.body.contactEmail
+//   , subject:        "Interest"
+//   , body:           req.body.comments
+//   , authentication: "login"
+//   , username:       username
+//   , password:       password
+//   }, function(err, result){
+//     if(err){
+//       console.log(err);
+//     } else {
+//       console.log('success');
+//     }
+//   }
+// );
+
+
     // var transporter = nodemailer.createTransport({
     //   service: "Hotmail", // use well known service
     //   auth: {
@@ -29,53 +76,58 @@ router.post('/email', function(req, res) {
     //   }
     // });
 
+// MANDRILL TEST - 1
 
-    var transport = nodemailer.createTransport("SMTP", {
-        service: 'Mandrill', // use well known service.
-        // If you are using @gmail.com address, then you don't
-        // even have to define the service name
-        auth: {
-            user: "equalsbrackets@gmail.com",
-            pass: "8RrMuPKMVL-7x9jjKB6xRA"
-        }
-    });
+    // var transport = nodemailer.createTransport("SMTP", {
+    //     service: 'Mandrill', // use well known service.
+    //     // If you are using @gmail.com address, then you don't
+    //     // even have to define the service name
+    //     auth: {
+    //         user: "equalsbrackets@gmail.com",
+    //         pass: "8RrMuPKMVL-7x9jjKB6xRA"
+    //     }
+    // });
 
-    console.log('SMTP Configured');
+    // console.log('SMTP Configured');
 
-    var message = {
+    // var message = {
 
-        // sender info
-        from: 'Sender: <' + req.body.contactEmail + '>',
+    //     // sender info
+    //     from: 'Sender: <' + req.body.contactEmail + '>',
 
-        // Comma separated list of recipients
-        to: '"Info:" <info@forcite.com.au>',
+    //     // Comma separated list of recipients
+    //     to: '"Info:" <info@forcite.com.au>',
 
-        // Subject of the message
-        subject: 'Nodemailer is unicode friendly ✔', //
+    //     // Subject of the message
+    //     subject: 'Nodemailer is unicode friendly ✔', //
 
-        headers: {
-            'X-Laziness-level': 1000
-        },
+    //     headers: {
+    //         'X-Laziness-level': 1000
+    //     },
 
-        // plaintext body
-        text: "Interest\n" +
-            "===========\n" +
-            "\n" +
-            "**How** are you?"
-    };
+    //     // plaintext body
+    //     text: "Interest\n" +
+    //         "===========\n" +
+    //         "\n" +
+    //         "**How** are you?"
+    // };
 
-    console.log('Sending Mail');
-    transport.sendMail(message, function(error) {
-        if (error) {
-            console.log('Error occured');
-            console.log(error.message);
-            return;
-        }
-        console.log('Message sent successfully!');
+    // console.log('Sending Mail');
+    // transport.sendMail(message, function(error) {
+    //     if (error) {
+    //         console.log('Error occured');
+    //         console.log(error.message);
+    //         return;
+    //     }
+    //     console.log('Message sent successfully!');
 
-        // if you don't want to use this transport object anymore, uncomment following line
-        transport.close(); // close the connection pool
-    });
+    //     // if you don't want to use this transport object anymore, uncomment following line
+    //     transport.close(); // close the connection pool
+    // });
+
+
+  // GMAIL
+
     // var mailOptions = {
     //   from: '<'+ req.body.contactEmail +'>', //grab form data from the request body , // sender address
     //   // to: 'equalsbrackets@gmail.com', // List people you want to be notified of the signup!!!!!! HERE!!!!

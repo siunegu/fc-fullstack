@@ -1,55 +1,54 @@
-
 <div class="contact-container">
-    <div class="container">
-        <div class="row register-container">
-            <div class="col-md-12 text-center">
-                <h3>REGISTER YOUR INTEREST!</h3>
-            </div>
-        </div>
-        <div class="row">
-        
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <form name="userForm" class="form-horizontal" ng-submit="contact.sendEmail(contact.userForm)">
-                    <div class="form-group">
-                        <div ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-                            <div class="left-inner-addon">
-                                <!-- <i class="material-icons">face</i> -->
-                                <img class="contact-recipient-icon" src="../assets/images/contact/recipient-sm-icon.png" style="
+  <div class="container">
+    <div class="row register-container">
+      <div class="col-md-12 text-center">
+        <h3>REGISTER YOUR INTEREST!</h3>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <form name="userForm" class="form-horizontal" ng-submit="contact.sendEmail(contact.userForm)">
+          <div class="form-group">
+            <div ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+              <div class="left-inner-addon">
+                <!-- <i class="material-icons">face</i> -->
+                <img class="contact-recipient-icon" src="../assets/images/contact/recipient-sm-icon.png" style="
                                   position: absolute;
                                   left: 10px;
                                   top: 2px;
                                   width: 22px;
                                 ">
-                                <input type="text" name="name" class="form-control" placeholder="Name" ng-model="contact.userForm.name" ng-maxlength="60" ng-minlength="2" required />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
-                            <div class="left-inner-addon">
-                                <i class="material-icons">email</i>
-                                <input type="email" name="email" placeholder="Email" class="form-control" ng-model="contact.userForm.email" ng-maxlength="254" required />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Name" ng-model="contact.userForm.name" ng-maxlength="60" ng-minlength="2" required />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+              <div class="left-inner-addon">
+                <i class="material-icons">email</i>
+                <input type="email" name="email" placeholder="Email" class="form-control" ng-model="contact.userForm.email" ng-maxlength="254" required />
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-group">
             <div class="col-xs-6" ng-class="{ 'has-error' : userForm.country.$invalid && !userForm.country.$pristine }">
               <select ng-model="contact.userForm.country" class="form-control" ng-options="country.name for country in contact.countryList track by country.code" required >
                 <option value="">Select a Country</option>
               </select>
             </div>
           </div> -->
-                    <div class="form-group">
-                        <div class="text-center button-container">
-                            <button ng-click="contact.sendEmail(contact.userForm)" class="btn fc-button" type="submit" name="Submit" value="Submit">PRE-ORDER</button>
-                        </div>
-                    </div>
-                </form>
+          <div class="form-group">
+            <div class="text-center button-container">
+              <button ng-click="contact.sendEmail(contact.userForm)" class="btn fc-button" type="submit" name="Submit" value="Submit">SUBMIT</button>
             </div>
-            <div class="col-md-3"></div>
-        </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3"></div>
     </div>
+  </div>
 </div>
 
 <div id="map-canvas">
@@ -59,20 +58,19 @@
 </div>
 
 <div class="mail-info-container ">
-    <div class="container ">
-        <div class="row ">
-            <div class="col-md-12 text-center ">
-                <img src="../assets/images/forcite-logo.png " alt="... " class="img-rounded ">
-                <h4>Suite 1B level 2</h4>
-                <h4>204-218 Botany Rd</h4>
-                <h4>Alexandria 2015</h4>
-                <h4>Sydney NSW, Australia</h4>
-                <br>
-                <span>Please e-mail:</span>
-                <p><a ng-href="mailto:info@forcite.com.au ">info@forcite.com.au</a></p>
-            </div>
-        </div>
+  <div class="container ">
+    <div class="row ">
+      <div class="col-md-12 text-center ">
+        <img src="../assets/images/forcite-logo.png " alt="... " class="img-rounded ">
+        <h4>Suite 1B level 2</h4>
+        <h4>204-218 Botany Rd</h4>
+        <h4>Alexandria 2015</h4>
+        <h4>Sydney NSW, Australia</h4>
+        <br>
+        <span>Please e-mail:</span>
+        <p><a ng-href="mailto:info@forcite.com.au ">info@forcite.com.au</a></p>
+      </div>
     </div>
+  </div>
 </div>
 <footer-directive></footer-directive>
-

@@ -254,7 +254,6 @@ class PreorderController {
   }
 
   sendEmail(form) {
-    console.log('form is..', form);
 
     var data = {
       contactName: form.name,

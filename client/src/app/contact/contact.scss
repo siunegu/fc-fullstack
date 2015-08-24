@@ -12,6 +12,11 @@
   .material-icons {
     color:#fff;
   }
+  textarea {
+    color:#fff;
+    background:rgba(0,0,0,0);
+    font-style:italic;
+  }
 
   input {
     color:#fff;
@@ -63,13 +68,13 @@
   background-size: scale;
   background-position: center center;
   height: 75vh;
-  
+
 
   #marker {
     position: relative;
     left: 48%;
     top: 38%;
-    
+
     padding: 20px;
 
     width: 10px;
@@ -93,7 +98,7 @@
 
     border-radius: 50%;
     background-color: red;
-  }  
+  }
 }
 
 @-webkit-keyframes pulsate {
@@ -104,11 +109,10 @@
   10% {
     -webkit-transform: scale(1.0);
     opacity: 0.8;
-  }  
+  }
 
   100% {
     -webkit-transform: scale(1.6);
     opacity: 0.0;
   }
 }
-

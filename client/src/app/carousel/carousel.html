@@ -1,10 +1,6 @@
 <div ng-cloak class="">
         <div class="carousel-vid">
-            <!-- <i class="material-icons carousel-vid-button">play_arrow</i> -->
-<!--             <video ng-cloak autoplay loop class="">
-                <source src="https://youtu.be/-aBNWK6UsRY" type="video/webm">
-            </video>    -->     
-           <iframe ng-cloak width="422.5" height="240" controls="true" src="https://www.youtube.com/embed/eMJZYYzYMzk" frameborder="0" allowfullscreen></iframe>
+           <iframe ng-cloak src="https://player.vimeo.com/video/137097363" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
 
     <button ng-click="slickConfig.method.slickPrev()" data-role="none" class="" aria-label="Previous" role="button" style="
@@ -31,11 +27,10 @@
     " id="previous"><i class="material-icons md-48">keyboard_arrow_right</i></button>
     <section ng-cloak class="carousel">
         <slick settings="slickConfig" lazy-load="ondemand" slides-to-scroll="1">
+        <img src="../assets/images/carousel/hero-slide.jpg" alt="">
         <img src="../assets/images/carousel/slide-2.jpg" alt="">
         <img src="../assets/images/carousel/slide-1.jpg" alt="">
-        <img src="../assets/images/carousel/slide-app.jpg" alt="">
-        <img src="../assets/images/carousel/hero-slide.jpg" alt="">
-        <!-- <img src="../assets/images/carousel/slide-3.jpg" alt=""> -->
+        <img src="../assets/images/carousel/slide-3.jpg" alt="">
         </slick>
     </section>
 </div>

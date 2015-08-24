@@ -5,7 +5,7 @@
   font-family: 'Arimo';
   position:relative;
 
-  background: #696969;
+  background: #252525;
   height: 470px;
 
   color:#fff;
@@ -58,7 +58,7 @@
 
 #map-canvas {
   // can replace marker later.
-  border: 15px solid #3A3A3E;
+  border: 15px solid #252525;
   background-image: url(http://maps.googleapis.com/maps/api/staticmap?center=-33.900897,+151.200909&zoom=16&scale=2&size=1200x1200&maptype=roadmap&format=jpg&visual_refresh=true&);
   background-size: scale;
   background-position: center center;

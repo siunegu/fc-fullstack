@@ -13,6 +13,7 @@
     width: 50px;
     top: 50%;
     left: 8px;
+    display:none;
     " id="previous"><i class="material-icons md-48">keyboard_arrow_left</i></button>
     <button ng-click="slickConfig.method.slickNext()" data-role="none" class="" aria-label="Next" role="button" style="
     position: absolute;
@@ -24,15 +25,16 @@
     width: 50px;
     top: 50%;
     right: 8px;
+    display:none;
     " id="previous"><i class="material-icons md-48">keyboard_arrow_right</i></button>
     <section ng-cloak class="carousel">
-        <slick settings="slickConfig" lazy-load="ondemand" slides-to-scroll="1" class="ng-cloak">
-        <img src="../assets/images/carousel/hero-slide.jpg" alt="">
-        <img src="../assets/images/carousel/slide-1.jpg" alt="">
-        <img src="../assets/images/carousel/slide-2.jpg" alt="">
-        <img src="../assets/images/carousel/slide-3.jpg" alt="">
-        <img src="../assets/images/carousel/slide-4.jpg" alt="">
-        </slick>
+    <!--     <slick settings="slickConfig" lazy-load="ondemand" slides-to-scroll="1" class="ng-cloak"> -->
+        <!-- <img src="../assets/images/carousel/hero-slide.jpg" alt=""> -->
+        <img src="../assets/images/carousel/slide-1.jpg" style="width:100%">
+        <!-- <img src="../assets/images/carousel/slide-2.jpg" alt=""> -->
+        <!-- <img src="../assets/images/carousel/slide-3.jpg" alt=""> -->
+        <!-- <img src="../assets/images/carousel/slide-4.jpg" alt=""> -->
+        <!-- </slick> -->
     </section>
 </div>
 <span class="main-body">

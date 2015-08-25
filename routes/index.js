@@ -2,6 +2,7 @@ var express = require('express');
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var mandrillTransport = require('nodemailer-mandrill-transport');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -12,32 +13,42 @@ router.get('/', function(req, res, next) {
 
 router.post('/email', function(req, res) {
 
-
-    console.log(req.body);
     console.log('Email params (name):' + req.body.contactName);
     console.log('Email params (email):' + req.body.contactEmail);
     console.log('Email params (comments):' + req.body.comments);
 
 
-    var mandrillTransport = require('nodemailer-mandrill-transport');
-     
-    var transport = nodemailer.createTransport(mandrillTransport({
-      auth: {
-        apiKey: 'key'
-      }
-    }));
-     
-    transport.sendMail({
-      to: 'user@example.com',
-      subject: 'Hello',
-      html: '<p>How are you?</p>'
-    }, function(err, info) {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log(info);
-      }
+    var transporter = nodemailer.createTransport();
+
+    transporter.sendMail({
+        from: req.body.contactEmail,
+        to: 'info@forcite.com.au',
+        subject: req.body.contactName,
+        text: req.body.comments
+    }, function(err, response) {
+        console.log(err || response);
     });
+
+    // MANDRILL - TRANSPORT TEST 
+    
+    // var transport = nodemailer.createTransport("mandrillTransport",{
+    //     email: 'equalsbrackets@gmail',
+    //     apiKey: '8RrMuPKMVL-7x9jjKB6xRA'      
+    // });
+     
+    // nodemailer.sendMail({
+    //   transport: transport,
+    //   sender: req.body.contactEmail,
+    //   to: 'equalsbrackets@gmail.com',
+    //   subject: 'Hello',
+    //   html: '<p>How are you?</p>'
+    // }, function(err, info) {
+    //   if (err) {
+    //     console.error(err);
+    //   } else {
+    //     console.log(info);
+    //   }
+    // });
 
 
 // MANDRILL TEST -2

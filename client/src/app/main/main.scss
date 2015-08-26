@@ -42,6 +42,12 @@
 
     margin-top: 250px;
     margin-bottom: 20%;
+
+    @media (max-width: 375px), handheld and (orientation: portrait) {
+    	.carousel-video-frame {
+				margin-bottom: 25%;    		
+    	}
+    }
 }
 
  .carousel-video {
@@ -733,6 +739,10 @@
  			cursor: pointer;
 
  		} 		
+
+ 		@media (max-width: 768px) {
+ 			display: none;
+ 		}
  	}
 
  	h5 {

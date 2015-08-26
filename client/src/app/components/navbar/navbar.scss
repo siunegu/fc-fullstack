@@ -107,11 +107,13 @@
     }
     .dropdown-toggle {
         background-color: #252525;
+        color: cyan;
+        font-size: 1.5em;
         border: 1px solid $red-accent;
         border-radius: 2px;
-        padding: 7px 7px 4px 7px;
+        padding: 4px 7px 4px 7px;
         &:hover {
-            color: cyan;
+            color: red;
         }
     }
     .glyphicon-menu-hamburger {

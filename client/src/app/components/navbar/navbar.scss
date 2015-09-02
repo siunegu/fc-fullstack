@@ -213,11 +213,12 @@
 .fc-button {
     padding-top: 8px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.0);
-    border: 1px solid #fff;
+    background-color: $red-accent;
+    // border: 1px solid #fff;
     transition: 0.3s all ease-in-out;
     &:hover {
-        color: cyan;
+        color: #fff;
+        background-color: transparent;
         border: 1px solid $red-accent;
     }
 }

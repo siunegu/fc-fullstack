@@ -23,7 +23,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
         controllerAs: 'techspec'
     })
 
-    .state('about', {
+    .state('home.about', {
       url: '/about',
       templateUrl: 'app/about/about.html',
       controller: 'AboutController',
@@ -31,14 +31,14 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       reload: true
     })
 
-    .state('contact', {
+    .state('home.contact', {
       url: '/contact',
       templateUrl: 'app/contact/contact.html',
       controller: 'ContactController',
       controllerAs: 'contact'
     })
 
-    .state('preorder', {
+    .state('home.preorder', {
       url: '/preorder',
       templateUrl: 'app/preorder/preorder.html',
       controller: 'PreorderController',

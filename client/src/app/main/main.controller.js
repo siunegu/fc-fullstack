@@ -19,7 +19,7 @@ class MainController {
             $scope.openImpact = function() {
                 console.log("impact");
                 ngDialog.open({
-                    template: '<div class="ngdialog-message"><div class="row"><div class="col-md-4"><img src="../assets/images/impact-sensor.png" alt=""></div><div class="col-md-8"><h4>IMPACT PROTECTION</h4><p>Designed from the ground up for safety, the  integrate computer system is housed in a high tensile waterproof capsule for protection.</p></div></div></div><div class="mt"></div>',
+                    template: '<div class="ngdialog-message"><div class="row"><div class="col-md-4"><img src="../assets/images/impact-sensor.png" alt=""></div><div class="col-md-8"><h4>IMPACT PROTECTION</h4><p>Designed from the ground up for safety, the  integrated computer system is housed in a high tensile waterproof capsule for protection.</p></div></div></div><div class="mt"></div>',
                     plain: true                    
                 });
             };
@@ -40,7 +40,7 @@ class MainController {
 
             $scope.openBattery = function() {
                 ngDialog.open({
-                    template: '<div class="ngdialog-message ngdialog-battery"><div class="row"><div class="col-md-3"><img src="../assets/images/swap-out.png" alt=""></div><div class="col-md-9"><h4>NON EXPLOSIVE BATTERY</h4><p>Our unique non-explosive battery design is produced to be non explosive upon cutting, piercing or impact</p></div></div></div><div class="mt"></div>',
+                    template: '<div class="ngdialog-message ngdialog-battery"><div class="row"><div class="col-md-3"><img src="../assets/images/swap-out.png" alt=""></div><div class="col-md-9"><h4>NON EXPLOSIVE BATTERY</h4><p>Our unique battery design is produced to be non explosive upon cutting, piercing or impact</p></div></div></div><div class="mt"></div>',
                     plain: true
                 })
 

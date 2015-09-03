@@ -744,10 +744,6 @@
  			cursor: pointer;
 
  		} 		
-
- 		@media (max-width: 768px) {
- 			display: none;
- 		}
  	}
 
  	h5 {
@@ -765,9 +761,9 @@
 
 // Iphone 5
 @media only screen
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
 
 	// Panels
 	h2 {
@@ -883,9 +879,9 @@
 				width: 65vw !important;
 			}		
 		}
-	.icon-container {
-		display: none;
-	}
+		.icon-container {
+			display: none;
+		}
 	}
 
 	.col-xs-6 {
@@ -894,7 +890,7 @@
 
 	footer {
 		p {
-	    font-size: 0.65em;			
+			font-size: 0.65em;			
 		}
 		ul {
 			&:first-child{
@@ -902,7 +898,7 @@
 				right: 5px;
 				top: 12px;
 			}
-	    font-size: 0.6em;
+			font-size: 0.6em;
 		}
 	}
 }
@@ -910,9 +906,9 @@
 
 // Iphone 6
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) {
 
 	// Panels
 	h2 {
@@ -1029,9 +1025,9 @@
 				width: 65vw !important;
 			}		
 		}
-	.icon-container {
-		display: none;
-	}
+		.icon-container {
+			display: none;
+		}
 	}
 
 	.col-xs-6 {
@@ -1040,7 +1036,7 @@
 
 	footer {
 		p {
-	    font-size: 0.65em;			
+			font-size: 0.65em;			
 		}
 		ul {
 			&:first-child{
@@ -1048,7 +1044,32 @@
 				right: 5px;
 				top: 12px;
 			}
-	    font-size: 0.6em;
+			font-size: 0.6em;
 		}
+	}
+}
+
+
+// Ipad
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1) {
+	.never-ski-alone {
+		background-position-x: 31%;	
+	}	
+	.full-on-protection {
+		background-position-x: 28%;	
+	}
+	.comm-system {
+		background-position-x: 48%;	
+	}
+	.icon-container {
+		.icon-box {
+			display: block;
+			width:100%;
+		}		
 	}
 }

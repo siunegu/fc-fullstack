@@ -70,58 +70,6 @@
     display: none;
 }
 
-@media (max-width: 768px) {
-    .navbar-hamburger {
-        position: absolute;
-        top: 8px;
-        right: 10px;
-        display: inline-flex;
-        z-index: 99999999;
-        .caret {
-            display: none;
-        }
-        .dropdown-menu {
-            background-color: #252525;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            position: absolute;
-            right: 12px;
-            left: -130px;
-            z-index: 99999999;
-            li {
-                a {
-                    color: #fff;
-                    font-family: 'Orbitron';
-                    text-transform: uppercase;
-                    font-size: 1.4em;
-                    text-align: center;
-                    padding-top: 18px;
-                    padding-bottom: 18px;
-                    &:hover {
-                        color: #fff;
-                        background-color: $red-accent;
-                    }
-                }
-            }
-        }
-    }
-    .dropdown-toggle {
-        background-color: #252525;
-        color: cyan;
-        font-size: 1.5em;
-        border: 1px solid $red-accent;
-        border-radius: 2px;
-        padding: 4px 7px 4px 7px;
-        &:hover {
-            color: red;
-        }
-    }
-    .glyphicon-menu-hamburger {
-        font-size: 1.8em;
-        color: $red-accent;
-    }
-}
-
 
 /*
  * ==========================
@@ -245,11 +193,108 @@
     .fc-button {
         right: -18px;
     }
+    .navbar-hamburger {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        display: inline-flex;
+        z-index: 99999999;
+        .caret {
+            display: none;
+        }
+        .dropdown-menu {
+            background-color: #252525;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            position: absolute;
+            right: 12px;
+            left: -130px;
+            z-index: 99999999;
+            li {
+                a {
+                    color: #fff;
+                    font-family: 'Orbitron';
+                    text-transform: uppercase;
+                    font-size: 1.4em;
+                    text-align: center;
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                    &:hover {
+                        color: #fff;
+                        background-color: $red-accent;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-toggle {
+        background-color: #252525;
+        color: cyan;
+        font-size: 1.5em;
+        border: 1px solid $red-accent;
+        border-radius: 2px;
+        padding: 4px 7px 4px 7px;
+        &:hover {
+            color: red;
+        }
+    }
+    .glyphicon-menu-hamburger {
+        font-size: 1.8em;
+        color: $red-accent;
+    }    
 }
 // IPhone 5
 @media only screen
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
+    .navbar-hamburger {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        display: inline-flex;
+        z-index: 99999999;
+        .caret {
+            display: none;
+        }
+        .dropdown-menu {
+            background-color: #252525;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            position: absolute;
+            right: 12px;
+            left: -130px;
+            z-index: 99999999;
+            li {
+                a {
+                    color: #fff;
+                    font-family: 'Orbitron';
+                    text-transform: uppercase;
+                    font-size: 1.4em;
+                    text-align: center;
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                    &:hover {
+                        color: #fff;
+                        background-color: $red-accent;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-toggle {
+        background-color: #252525;
+        color: cyan;
+        font-size: 1.5em;
+        border: 1px solid $red-accent;
+        border-radius: 2px;
+        padding: 4px 7px 4px 7px;
+        &:hover {
+            color: red;
+        }
+    }
+    .glyphicon-menu-hamburger {
+        font-size: 1.8em;
+        color: $red-accent;
+    }
   }

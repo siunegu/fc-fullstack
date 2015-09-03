@@ -15,7 +15,12 @@
 
 	// width: 98.8vw;
 	overflow: hidden;
-	z-index: -1;
+	z-index: 0;
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: 100px;
 }
 
 
@@ -29,7 +34,7 @@
  	@extend .panel-frontpage;
  	position: relative;
  	text-align: center;
-
+ 	padding-bottom: 50%;
  	height: 80vh;	
 
  	background-image: url('../assets/images/team-image.jpg');
@@ -59,9 +64,12 @@
 .story-info {
 	@extend .panel-frontpage;
 	position: relative;
+	top: -51px;
+	margin-bottom: -62px;
+
 	text-align: center;
 
-	height: 80vh;	
+	height: 88vh;	
 
 	background-image: url('../assets/images/about-helmet.jpg');
 	background-size: cover;

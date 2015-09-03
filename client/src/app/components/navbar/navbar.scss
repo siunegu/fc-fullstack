@@ -234,8 +234,11 @@
 
 
 // Responsive 
-
-@media (max-width: 375px) {
+// IPhone 6
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
     .subnav-link-mobile {
         left: 2px;
     }
@@ -243,3 +246,10 @@
         right: -18px;
     }
 }
+// IPhone 5
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }

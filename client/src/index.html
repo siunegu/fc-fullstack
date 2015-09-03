@@ -2,10 +2,19 @@
 <html ng-app="client">
 
 <head>
-    <meta charset="utf-8">
+    <base href="/" />
+    <!-- <meta charset="utf-8">
     <title>Forcite Helmet Systems</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width"> -->
+
+    <title ng-bind="MetaTags.title">Forcite Helmet Systems</title>
+    <meta name="description" content="{{MetaTags.description}}">
+    <meta name="keywords" content="{{MetaTags.keywords}}">
+    <meta ng-repeat="(key, value) in MetaTags.properties" property="{{key}}" content="{{value}}">
+
+
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <!-- bower:css -->
@@ -38,7 +47,7 @@
 
     ga('create', 'UA-59677376-1', 'auto');
     ga('send', 'pageview');
-    </script>    
+    </script>
     <script type="text/javascript">
     window.onload = function() {
         var slick = document.querySelector('slick');
@@ -88,7 +97,7 @@
                     </li>
                     <li>
                         <a href="https://twitter.com/forcitehelmets"><img src="../assets/images/twitter.png"></a>
-                    </li> 
+                    </li>
                 </ul>
             </div>
             <div class=" navbar-hamburger dropdown-menu-right">
@@ -108,7 +117,7 @@
                       </li>
                       <li>
                           <a href="https://twitter.com/forcitehelmets"><img src="../assets/images/twitter.png"></a>
-                      </li>                    
+                      </li>
                 </ul>
             </div>
         </div>
@@ -129,6 +138,11 @@
     <!-- endinject -->
     <!-- endbuild -->
 
+
 </body>
+<script type="text/javascript">
+var uiroutermetatags;!function(t){function e(t,e,i,s){e.MetaTags=s,e.$on("$stateChangeSuccess",function(){i.current.metaTags||t.debug('MetaTags - route: "'+i.current.name+'" does not contain any metatags'),s.update(i.current.metaTags)})}var i=angular.module("ui.router.metatags",["ui.router"]),s=function(){function t(){this.prefix="",this.suffix="",this.defaultTitle=""}return t.prototype.setTitlePrefix=function(t){this.prefix=t},t.prototype.setTitleSuffix=function(t){this.suffix=t},t.prototype.setDefaultTitle=function(t){this.defaultTitle=t},t.prototype.$get=function(){return{prefix:this.prefix,suffix:this.suffix,defaultTitle:this.defaultTitle}},t}();i.provider("UIRouterMetatags",s);var r=function(){function t(t){this.UIRouterMetatags=t}return t.$inject=["UIRouterMetatags"],t.prototype.update=function(t){t?(this.title=t.title?this.UIRouterMetatags.prefix+(t.title||"")+this.UIRouterMetatags.suffix:this.UIRouterMetatags.defaultTitle,this.description=t.description||"",this.keywords=t.keywords||"",this.properties=t.properties||{}):(this.title=this.UIRouterMetatags.defaultTitle,this.description="",this.keywords="",this.properties={})},t}();t.MetaTags=r,i.service("MetaTags",r),e.$inject=["$log","$rootScope","$state","MetaTags"],i.run(e)}(uiroutermetatags||(uiroutermetatags={}));
+//# sourceMappingURL=ui-router-metatags.min.js.map
+</script>
 
 </html>

@@ -17,7 +17,7 @@ import FooterDirective from '../app/components/directives/footer.directive';
 import GmapDirective from '../app/components/directives/gmap.directive';
 // import SlickDirective from '../app/components/slick/'
 
-angular.module('client', ['slickCarousel', 'ngTouch', 'ui.router', , 'ngDialog'])
+angular.module('client', ['slickCarousel', 'ngTouch', 'ui.router', , 'ngDialog', 'ui.router.metatags'])
   .constant('moment', moment)
 
   .config(config)
@@ -38,5 +38,5 @@ angular.module('client', ['slickCarousel', 'ngTouch', 'ui.router', , 'ngDialog']
   .directive('acmeNavbar', () => new NavbarDirective())
 
   .directive('footerDirective', () => new FooterDirective())
-  
+
   .directive('gmapDirective', () => new GmapDirective())

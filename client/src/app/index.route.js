@@ -2,14 +2,14 @@ function routerConfig($stateProvider, $urlRouterProvider) {
   'ngInject';
   $stateProvider
     .state('home', {
-      url: '/home',
+      url: '',
       templateUrl: 'app/main/main.html',
       controller: 'MainController',
       controllerAs: 'main'
     })
 
   .state('home.features', {
-    url: '/features',
+    url: '/',
     templateUrl: 'app/carousel/carousel.html',
     controller: 'MainController',
     controllerAs: 'main',
@@ -85,7 +85,7 @@ function routerConfig($stateProvider, $urlRouterProvider) {
   });
 
 
-  $urlRouterProvider.otherwise('/home/features');
+  $urlRouterProvider.otherwise('/');
 }
 
 export default routerConfig;

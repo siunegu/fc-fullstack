@@ -73,8 +73,8 @@
 @media (max-width: 768px) {
     .navbar-hamburger {
         position: absolute;
-        top: 12px;
-        right: 12px;
+        top: 8px;
+        right: 10px;
         display: inline-flex;
         z-index: 99999999;
         .caret {
@@ -163,11 +163,20 @@
     @media (max-width: 480px) {
         text-align: center;
         a {
-            font-size: 0.9em;
+        font-size: 0.75em;
+            margin-left: 12px;
+        }
+        .subnav-link-mobile {
+            width: 22%;
+            margin-right: 25px;
+            right: 15px;
         }
         .fc-button {
             position: relative;
-            right: 16px;
+            /* right: -8%; */
+            top: -6%;
+            /* padding-left: 18px; */
+            font-size: 0.80em;
         }
     }
 }

@@ -4,7 +4,7 @@
   }
   .small-container {
     margin-top:30px;
-    width: 800px;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     padding-left: 30px;
@@ -94,4 +94,23 @@
 .weight-container {
   color: #fff;
   margin-top: 30px;
+}
+
+
+@media (max-width: 375px) {
+  .tech-spec-container {
+    .small-container {
+      width: 100%;
+      .rounded-size {
+        padding: 15%;
+      }
+    }
+    .rounded-filled-white, .rounded-filled-black {
+      padding: 1px 18px;    
+    }    
+  }
+
+  img.img-rounded {
+    width: 75vw;
+  }
 }

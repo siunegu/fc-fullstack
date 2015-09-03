@@ -4,7 +4,7 @@
  * ==========================
  */
 
-.nav.navbar-nav {
+ .nav.navbar-nav {
     font-family: 'Orbitron';
     font-size: 13px;
     z-index: 9999;
@@ -64,17 +64,194 @@
  * ==========================
  */
 
-.navbar-hamburger {
+ .navbar-hamburger {
     position: relative;
     bottom: 8px;
     display: none;
 }
 
-@media (max-width: 768px) {
+
+/*
+ * ==========================
+ * Sub Nav
+ * ==========================
+ */
+
+ .subnav {
+    height: 75px;
+    margin-top: 60px;
+    position: fixed;
+    display: block;
+    width: 100vw;
+    font-family: 'Orbitron';
+    z-index: 999;
+    background-color: rgba(20, 20, 26, 0.88);
+    // background-color: #3A3A3E;
+    padding-top: 25px !important;
+    a {
+        position: relative;
+        top: 2px;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            border-bottom: 1px solid red;
+        }
+    }
+    button {
+        position: relative;
+        bottom: 5px;
+    }
+    .active {
+        color: cyan;
+        border-bottom: 1px solid red;
+    }
+    .col-xs-4 .col-sm-4 {
+        text-align: center;
+    }
+    @media (max-width: 480px) {
+        text-align: center;
+        a {
+            font-size: 0.75em;
+            margin-left: 12px;
+        }
+        .subnav-link-mobile {
+            width: 22%;
+            margin-right: 25px;
+            right: 15px;
+        }
+        .fc-button {
+            position: relative;
+            /* right: -8%; */
+            top: -6%;
+            /* padding-left: 18px; */
+            font-size: 0.80em;
+        }
+    }
+}
+
+.navbar-inner {
+    .container {
+        min-width: 88%;
+    }
+    @media (max-width: 480px) {
+        .container {
+            min-width: 78%;
+        }
+    }
+}
+
+
+/*
+  * ==========================
+  * Overrides
+  * ==========================
+  */
+
+  .navbar-static-top {
+    transition: all 0.2s ease-in-out;
+    position: fixed !important;
+    top: 0;
+    display: block;
+    width: 100vw;
+    z-index: 9999999;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+
+/*
+  * ==========================
+  * Buttons
+  * ==========================
+  */
+
+  .fc-button {
+    padding-top: 8px;
+    color: #fff;
+    background-color: $red-accent;
+    // border: 1px solid #fff;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid $red-accent;
+    }
+}
+
+
+// Responsive 
+// IPhone 6
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .subnav-link-mobile {
+        left: 2px;
+    }
+    .fc-button {
+        right: -18px;
+    }
     .navbar-hamburger {
         position: absolute;
-        top: 12px;
-        right: 12px;
+        top: 8px;
+        right: 10px;
+        display: inline-flex;
+        z-index: 99999999;
+        .caret {
+            display: none;
+        }
+        .dropdown-menu {
+            background-color: #252525;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            position: absolute;
+            right: 12px;
+            left: -130px;
+            z-index: 99999999;
+            li {
+                a {
+                    color: #fff;
+                    font-family: 'Orbitron';
+                    text-transform: uppercase;
+                    font-size: 1.4em;
+                    text-align: center;
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                    &:hover {
+                        color: #fff;
+                        background-color: $red-accent;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-toggle {
+        background-color: #252525;
+        color: cyan;
+        font-size: 1.5em;
+        border: 1px solid $red-accent;
+        border-radius: 2px;
+        padding: 4px 7px 4px 7px;
+        &:hover {
+            color: red;
+        }
+    }
+    .glyphicon-menu-hamburger {
+        font-size: 1.8em;
+        color: $red-accent;
+    }    
+}
+// IPhone 5
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar-hamburger {
+        position: absolute;
+        top: 8px;
+        right: 10px;
         display: inline-flex;
         z-index: 99999999;
         .caret {
@@ -120,105 +297,4 @@
         font-size: 1.8em;
         color: $red-accent;
     }
-}
-
-
-/*
- * ==========================
- * Sub Nav
- * ==========================
- */
-
-.subnav {
-    height: 75px;
-    margin-top: 60px;
-    position: fixed;
-    display: block;
-    width: 100vw;
-    font-family: 'Orbitron';
-    z-index: 999;
-    background-color: rgba(20, 20, 26, 0.88);
-    // background-color: #3A3A3E;
-    padding-top: 25px !important;
-    a {
-        position: relative;
-        top: 2px;
-        color: #fff;
-        text-decoration: none;
-        &:hover {
-            border-bottom: 1px solid red;
-        }
-    }
-    button {
-        position: relative;
-        bottom: 5px;
-    }
-    .active {
-        color: cyan;
-        border-bottom: 1px solid red;
-    }
-    .col-xs-4 .col-sm-4 {
-        text-align: center;
-    }
-    @media (max-width: 480px) {
-        text-align: center;
-        a {
-            font-size: 0.9em;
-        }
-        .fc-button {
-            position: relative;
-            right: 16px;
-        }
-    }
-}
-
-.navbar-inner {
-    .container {
-        min-width: 88%;
-    }
-    @media (max-width: 480px) {
-        .container {
-            min-width: 78%;
-        }
-    }
-}
-
-
-/*
-  * ==========================
-  * Overrides
-  * ==========================
-  */
-
-.navbar-static-top {
-    transition: all 0.2s ease-in-out;
-    position: fixed !important;
-    top: 0;
-    display: block;
-    width: 100vw;
-    z-index: 9999999;
-}
-
-.navbar {
-    margin-bottom: 0px;
-}
-
-
-/*
-  * ==========================
-  * Buttons
-  * ==========================
-  */
-
-.fc-button {
-    padding-top: 8px;
-    color: #fff;
-    background-color: $red-accent;
-    // border: 1px solid #fff;
-    transition: 0.3s all ease-in-out;
-    &:hover {
-        color: #fff;
-        background-color: transparent;
-        border: 1px solid $red-accent;
-    }
-}
+  }

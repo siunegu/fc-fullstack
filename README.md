@@ -1,7 +1,9 @@
-== Deployment
+###Installation
+`npm install`
+`bower install`
+cd client `gulp serve`
 
-### Starting
-
+###Deployment
 1. gulp build in `/client`
-2. copy built files in `/client/dist` into `/public`
+2. copy built files in `/client/dist` into `/public` in root
 3. `npm start`
